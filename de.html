@@ -13,53 +13,96 @@
       padding: 80px 40px;
       text-align: left;
       text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+      position: relative;
     }
-    .container { max-width: 900px; margin: auto; padding: 20px; background: white; }
-    .images { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin: 20px 0; }
-    .images img { width: 100%; max-width: 400px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-    footer { text-align: center; padding: 20px; background: #eee; font-size: 1.1em; }
-    h1, p { margin: 10px 0; }
+    .lang-switch {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    .lang-switch a, .lang-switch span {
+      background: black;
+      color: white;
+      padding: 6px 10px;
+      border-radius: 5px;
+      margin-left: 5px;
+      text-decoration: none;
+    }
+    .lang-switch .active {
+      background: white;
+      color: black;
+      font-weight: bold;
+      border: 2px solid black;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      background: white;
+    }
+    .images {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px 0;
+    }
+    .images img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+      font-size: 1.1em;
+    }
+    h1, p {
+      margin: 10px 0;
+    }
   </style>
 </head>
 <body>
 
   <header>
     <!-- Language Switcher -->
-    <div style="position: absolute; top: 20px; right: 20px;">
-      <a href="index.html" style="background: black; color: white; padding: 6px 10px; border-radius: 5px; margin-right: 8px; text-decoration: none;">English</a>
-      <span style="background: black; color: white; padding: 6px 10px; border-radius: 5px;">Deutsch</span>
+    <div class="lang-switch">
+      <a href="index.html">English</a>
+      <span class="active">Deutsch</span>
     </div>
-    <h1>🚐 Transportdienst für Expats in Zürich</h1>
-    <p>Zuverlässig, preiswert und immer pünktlich.</p>
+    <h1>🚙 Transportdienst für Expats in Zürich</h1>
+    <p>Zuverlässig, bezahlbar und immer pünktlich.</p>
   </header>
 
   <div class="container">
     <h2>Was ich anbiete</h2>
-    <p>Hallo! Ich biete eine einfache, persönliche Lösung für den Transport deiner Sachen von Punkt A nach Punkt B – ganz ohne Stress. Ich fahre einen geräumigen SUV mit viel Platz. Ja – sogar ein Bett oder Sofa passt problemlos ins Auto! Egal ob Kisten, Möbel oder dein Haustier zum Tierarzt – ich helfe gerne weiter.</p>
+    <p>Hallo! Ich biete eine einfache, persönliche Lösung an, um Ihre Sachen stressfrei von Punkt A nach B zu bringen. Ich fahre ein geräumiges SUV, das überraschend viel Platz bietet. Ja – sogar ein Bett oder Sofa passt hinein! Gerne helfe ich bei Möbeln, Kisten oder begleite Ihr Haustier zum Tierarzt.</p>
 
-    <p>Kein Aufwand wegen Treppen, Aufzügen oder Parkplätzen – dafür berechne ich keine Extrakosten. Ich komme einfach vorbei, packe mit an und erledige den Job.</p>
+    <p>Kein Stress wegen Treppen, Aufzügen oder Parkplätzen – dafür berechne ich keine Extrakosten. Ich komme einfach vorbei, packe mit an und erledige den Job.</p>
 
-    <p><strong>Fahrzeug-Laderaummaße:</strong><br>
+    <p><strong>Laderaummaße des Fahrzeugs:</strong><br>
     Länge: 190 cm &nbsp;&nbsp; Breite: 110 cm &nbsp;&nbsp; Höhe: 90 cm</p>
 
-    <p>Ein Blick aufs Fahrzeug:</p>
+    <p>Hier ein Blick auf das Fahrzeug:</p>
     <div class="images">
       <img src="van1.jpg" alt="Transportfahrzeug" />
-      <img src="van2.jpg" alt="Noch ein Transportfahrzeug" />
+      <img src="van2.jpg" alt="Weiteres Transportfahrzeug" />
     </div>
 
     <h2>Preise</h2>
-    <p>Klare Preise: <strong>100 CHF pro Stunde</strong>. Keine versteckten Kosten – Parkgebühren und Benzin übernehme ich.</p>
+    <p>Einfach und transparent: <strong>100 CHF pro Stunde</strong>. Keine versteckten Kosten. Parkgebühren und Benzin? Übernehme ich.</p>
 
-    <p>Dieser Service ist speziell für Expats gedacht – ich spreche Englisch und weiß, wie es ist, neu in einem Land zu starten. Ich bin freundlich, flexibel und helfe dir gern beim Umzug.</p>
+    <p>Dieser Service richtet sich besonders an Expats – ich spreche Englisch und weiß, wie es ist, in einem neuen Land anzukommen. Ich bin freundlich, flexibel und helfe gerne weiter.</p>
 
-    <h2>Kontaktiere mich</h2>
-    <p>📞 Telefon: 123-456-7890</p>
+    <h2>Kontakt</h2>
+    <p>📞 Telefon / WhatsApp: 123-456-7890 📱</p>
     <p>📧 E-Mail: contact@fastmove.com</p>
   </div>
 
   <footer>
-    &copy; Erstellt von mir – mit einem kleinen Schubs von Para
+    &copy; Erstellt von mir 
   </footer>
 
 </body>
