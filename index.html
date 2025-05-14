@@ -1,9 +1,9 @@
-<!-- index.html (English Version) -->
+<!-- index.html (English version) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>FastMove Transporter</title>
   <style>
     body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; }
@@ -16,23 +16,24 @@
       text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
       position: relative;
     }
-    .language-switcher {
+    .lang-toggle {
       position: absolute; top: 20px; right: 20px;
     }
-    .language-switcher a {
+    .lang-toggle a {
       padding: 6px 12px;
       border-radius: 5px;
       text-decoration: none;
-      background: white;
-      color: #005bac;
       font-weight: bold;
-      border: 2px solid #005bac;
+      border: 2px solid #005bbb;
       margin-left: 5px;
-      transition: background 0.3s, color 0.3s;
     }
-    .language-switcher a.active {
-      background: #005bac;
+    .lang-toggle .active {
+      background-color: #005bbb;
       color: white;
+    }
+    .lang-toggle a:not(.active) {
+      background-color: white;
+      color: #005bbb;
     }
     .container { max-width: 900px; margin: auto; padding: 20px; background: white; }
     .images { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin: 20px 0; }
@@ -42,8 +43,9 @@
   </style>
 </head>
 <body>
+
   <header>
-    <div class="language-switcher">
+    <div class="lang-toggle">
       <a href="index.html" class="active">🇬🇧 English</a>
       <a href="de.html">🇩🇪 Deutsch</a>
     </div>
@@ -58,7 +60,7 @@
     <p>No fuss about stairs, elevators, or parking — I won’t charge extra for any of that. I just show up, help out, and get the job done.</p>
 
     <p><strong>Vehicle cargo dimensions:</strong><br>
-    Length: 190 cm &nbsp;&nbsp; Width: 110 cm &nbsp;&nbsp; Height: 90 cm</p>
+      Length: 190 cm &nbsp;&nbsp; Width: 110 cm &nbsp;&nbsp; Height: 90 cm</p>
 
     <p>Here’s a look at the car:</p>
     <div class="images">
@@ -72,12 +74,13 @@
     <p>This service is especially designed for expats — I speak English and know what it’s like to settle in a new place. I’m friendly, flexible, and happy to make your move easier.</p>
 
     <h2>Contact Me</h2>
-    <p>📞 Phone: 123-456-7890 &nbsp;&nbsp; 📱 <a href="https://wa.me/1234567890" target="_blank">WhatsApp</a></p>
+    <p>📞 Phone: 123-456-7890 &nbsp;&nbsp;📱 <a href="https://wa.me/1234567890" target="_blank">WhatsApp</a> – Hi, thank you for getting in touch.. how can I help?</p>
     <p>📧 Email: contact@fastmove.com</p>
   </div>
 
   <footer>
     &copy; Created actually by ME
   </footer>
+
 </body>
 </html>
