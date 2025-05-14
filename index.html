@@ -10,29 +10,27 @@
       background: url('zrh.jpg') no-repeat center center;
       background-size: cover;
       color: white;
-      padding: 80px 40px;
+      padding: 80px 20px;
       text-align: left;
       text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
       position: relative;
     }
-    .lang-switch {
+    .language-switcher {
       position: absolute;
       top: 20px;
       right: 20px;
     }
-    .lang-switch a, .lang-switch span {
-      background: black;
-      color: white;
+    .language-switcher a, .language-switcher span {
       padding: 6px 10px;
       border-radius: 5px;
-      margin-left: 5px;
       text-decoration: none;
+      background: black;
+      color: white;
+      margin-left: 5px;
     }
-    .lang-switch .active {
-      background: white;
-      color: black;
+    .language-switcher span.active {
+      background: darkorange;
       font-weight: bold;
-      border: 2px solid black;
     }
     .container {
       max-width: 900px;
@@ -59,18 +57,15 @@
       background: #eee;
       font-size: 1.1em;
     }
-    h1, p {
-      margin: 10px 0;
-    }
+    h1, p { margin: 10px 0; }
   </style>
 </head>
 <body>
 
   <header>
-    <!-- Language Switcher -->
-    <div class="lang-switch">
-      <span class="active">English</span>
-      <a href="de.html">Deutsch</a>
+    <div class="language-switcher">
+      <span class="active">🇬🇧 English</span>
+      <a href="de.html">🇩🇪 Deutsch</a>
     </div>
     <h1>🚙 Transport Services for Expats in Zurich</h1>
     <p>Reliable, affordable, and always on time.</p>
@@ -97,12 +92,13 @@
     <p>This service is especially designed for expats — I speak English and know what it’s like to settle in a new place. I’m friendly, flexible, and happy to make your move easier.</p>
 
     <h2>Contact Me</h2>
-    <p>📞 Phone / WhatsApp: 123-456-7890 📱</p>
-    <p>📧 Email: contact@fastmove.com</p>
+    <p>📞 Phone: <a href="tel:1234567890">123-456-7890</a></p>
+    <p>📱 WhatsApp: <a href="https://wa.me/411234567890?text=Hi%2C%20thank%20you%20for%20getting%20in%20touch..%20how%20can%20I%20help%3F" target="_blank">Chat on WhatsApp</a></p>
+    <p>📧 Email: <a href="mailto:contact@fastmove.com">contact@fastmove.com</a></p>
   </div>
 
   <footer>
-    &copy; Created by me – with a little help from Para
+    &copy; Created by me, proudly helping people move in Zurich!
   </footer>
 
 </body>
