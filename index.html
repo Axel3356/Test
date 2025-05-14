@@ -1,8 +1,9 @@
+<!-- index.html (English Version) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FastMove Transporter</title>
   <style>
     body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; }
@@ -10,61 +11,40 @@
       background: url('zrh.jpg') no-repeat center center;
       background-size: cover;
       color: white;
-      padding: 80px 20px;
+      padding: 80px 40px;
       text-align: left;
       text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
       position: relative;
     }
     .language-switcher {
-      position: absolute;
-      top: 20px;
-      right: 20px;
+      position: absolute; top: 20px; right: 20px;
     }
-    .language-switcher a, .language-switcher span {
-      padding: 6px 10px;
+    .language-switcher a {
+      padding: 6px 12px;
       border-radius: 5px;
       text-decoration: none;
-      background: black;
-      color: white;
-      margin-left: 5px;
-    }
-    .language-switcher span.active {
-      background: darkorange;
-      font-weight: bold;
-    }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
       background: white;
+      color: #005bac;
+      font-weight: bold;
+      border: 2px solid #005bac;
+      margin-left: 5px;
+      transition: background 0.3s, color 0.3s;
     }
-    .images {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin: 20px 0;
+    .language-switcher a.active {
+      background: #005bac;
+      color: white;
     }
-    .images img {
-      width: 100%;
-      max-width: 400px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #eee;
-      font-size: 1.1em;
-    }
+    .container { max-width: 900px; margin: auto; padding: 20px; background: white; }
+    .images { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin: 20px 0; }
+    .images img { width: 100%; max-width: 400px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    footer { text-align: center; padding: 20px; background: #eee; font-size: 1.1em; }
     h1, p { margin: 10px 0; }
   </style>
 </head>
 <body>
-
   <header>
     <div class="language-switcher">
-      <span class="active">🇬🇧 English</span>
+      <a href="index.html" class="active">🇬🇧 English</a>
       <a href="de.html">🇩🇪 Deutsch</a>
     </div>
     <h1>🚙 Transport Services for Expats in Zurich</h1>
@@ -92,14 +72,12 @@
     <p>This service is especially designed for expats — I speak English and know what it’s like to settle in a new place. I’m friendly, flexible, and happy to make your move easier.</p>
 
     <h2>Contact Me</h2>
-    <p>📞 Phone: <a href="tel:1234567890">123-456-7890</a></p>
-    <p>📱 WhatsApp: <a href="https://wa.me/411234567890?text=Hi%2C%20thank%20you%20for%20getting%20in%20touch..%20how%20can%20I%20help%3F" target="_blank">Chat on WhatsApp</a></p>
-    <p>📧 Email: <a href="mailto:contact@fastmove.com">contact@fastmove.com</a></p>
+    <p>📞 Phone: 123-456-7890 &nbsp;&nbsp; 📱 <a href="https://wa.me/1234567890" target="_blank">WhatsApp</a></p>
+    <p>📧 Email: contact@fastmove.com</p>
   </div>
 
   <footer>
-    &copy; Created by me, proudly helping people move in Zurich!
+    &copy; Created actually by ME
   </footer>
-
 </body>
 </html>
