@@ -1,9 +1,9 @@
-<!-- de.html (German Version) -->
+<!-- de.html (German version) -->
 <!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>FastMove Transporter</title>
   <style>
     body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; }
@@ -16,23 +16,24 @@
       text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
       position: relative;
     }
-    .language-switcher {
+    .lang-toggle {
       position: absolute; top: 20px; right: 20px;
     }
-    .language-switcher a {
+    .lang-toggle a {
       padding: 6px 12px;
       border-radius: 5px;
       text-decoration: none;
-      background: white;
-      color: #005bac;
       font-weight: bold;
-      border: 2px solid #005bac;
+      border: 2px solid #005bbb;
       margin-left: 5px;
-      transition: background 0.3s, color 0.3s;
     }
-    .language-switcher a.active {
-      background: #005bac;
+    .lang-toggle .active {
+      background-color: #005bbb;
       color: white;
+    }
+    .lang-toggle a:not(.active) {
+      background-color: white;
+      color: #005bbb;
     }
     .container { max-width: 900px; margin: auto; padding: 20px; background: white; }
     .images { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin: 20px 0; }
@@ -42,42 +43,44 @@
   </style>
 </head>
 <body>
+
   <header>
-    <div class="language-switcher">
+    <div class="lang-toggle">
       <a href="index.html">🇬🇧 English</a>
       <a href="de.html" class="active">🇩🇪 Deutsch</a>
     </div>
     <h1>🚙 Transportdienste für Expats in Zürich</h1>
-    <p>Zuverlässig, bezahlbar und immer pünktlich.</p>
+    <p>Zuverlässig, erschwinglich und immer pünktlich.</p>
   </header>
 
   <div class="container">
-    <h2>Mein Angebot</h2>
-    <p>Hallo! Ich biete eine einfache, persönliche Lösung an, um Ihre Sachen stressfrei von Punkt A nach Punkt B zu bringen. Ich fahre einen geräumigen SUV, der erstaunlich viel Volumen aufnehmen kann. Ja — sogar ein Bett oder Sofa passt rein! Ich helfe gerne beim Transport von Kartons, Möbeln oder sogar Ihrem Haustier zum Tierarzt.</p>
+    <h2>Was ich anbiete</h2>
+    <p>Hallo! Ich biete eine einfache, persönliche Lösung, um Ihre Sachen stressfrei von Punkt A nach Punkt B zu transportieren. Ich fahre ein geräumiges SUV, das überraschend viel Platz bietet – ja, sogar ein Bett oder Sofa kann transportiert werden! Ich helfe gerne bei allem, von Kisten und Möbeln bis hin zum Tierarztbesuch mit Ihrem Haustier.</p>
 
-    <p>Kein Stress mit Treppen, Aufzügen oder Parkplätzen — dafür verlange ich keinen Aufpreis. Ich komme einfach vorbei, packe an und erledige den Job.</p>
+    <p>Kein Stress wegen Treppen, Aufzügen oder Parkplätzen – dafür berechne ich keinen Aufpreis. Ich komme einfach vorbei, packe mit an und erledige den Job.</p>
 
-    <p><strong>Laderaummaße des Fahrzeugs:</strong><br>
-    Länge: 190 cm &nbsp;&nbsp; Breite: 110 cm &nbsp;&nbsp; Höhe: 90 cm</p>
+    <p><strong>Fahrzeug-Laderaummaße:</strong><br>
+      Länge: 190 cm &nbsp;&nbsp; Breite: 110 cm &nbsp;&nbsp; Höhe: 90 cm</p>
 
-    <p>Hier ein Blick auf das Auto:</p>
+    <p>So sieht das Fahrzeug aus:</p>
     <div class="images">
       <img src="van1.jpg" alt="Transportfahrzeug" />
       <img src="van2.jpg" alt="Weiteres Transportfahrzeug" />
     </div>
 
     <h2>Preise</h2>
-    <p>Einfaches Preismodell: <strong>100 CHF pro Stunde</strong>. Keine versteckten Kosten. Parkgebühren und Benzin übernehme ich.</p>
+    <p>Einfaches Preismodell: <strong>100 CHF pro Stunde</strong>. Keine versteckten Gebühren. Parken und Treibstoff gehen auf mich.</p>
 
-    <p>Dieser Service richtet sich besonders an Expats — ich spreche Englisch und weiß, wie es ist, in einem neuen Land Fuß zu fassen. Ich bin freundlich, flexibel und mache Ihren Umzug so angenehm wie möglich.</p>
+    <p>Dieser Service ist speziell für Expats gedacht – ich spreche Englisch und weiß, wie es ist, in einem neuen Land anzukommen. Ich bin freundlich, flexibel und helfe Ihnen gerne beim Umzug.</p>
 
     <h2>Kontakt</h2>
-    <p>📞 Telefon: 123-456-7890 &nbsp;&nbsp; 📱 <a href="https://wa.me/1234567890" target="_blank">WhatsApp</a></p>
+    <p>📞 Telefon: 123-456-7890 &nbsp;&nbsp;📱 <a href="https://wa.me/1234567890" target="_blank">WhatsApp</a> – Hallo, danke für Ihre Nachricht. Wie kann ich helfen?</p>
     <p>📧 E-Mail: contact@fastmove.com</p>
   </div>
 
   <footer>
     &copy; Tatsächlich von mir erstellt
   </footer>
+
 </body>
 </html>
