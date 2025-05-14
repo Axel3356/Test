@@ -1,4 +1,3 @@
-<!-- de.html (German version) -->
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -16,70 +15,101 @@
       text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
       position: relative;
     }
-    .lang-toggle {
-      position: absolute; top: 20px; right: 20px;
-    }
-    .lang-toggle a {
-      padding: 6px 12px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      border: 2px solid #005bbb;
-      margin-left: 5px;
-    }
-    .lang-toggle .active {
-      background-color: #005bbb;
-      color: white;
-    }
-    .lang-toggle a:not(.active) {
-      background-color: white;
-      color: #005bbb;
-    }
     .container { max-width: 900px; margin: auto; padding: 20px; background: white; }
     .images { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin: 20px 0; }
     .images img { width: 100%; max-width: 400px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
     footer { text-align: center; padding: 20px; background: #eee; font-size: 1.1em; }
     h1, p { margin: 10px 0; }
+    /* Language toggle buttons */
+    .lang-switcher {
+      position: absolute; top: 20px; right: 20px;
+    }
+    .lang-switcher a, .lang-switcher span {
+      background: #003366; /* Zurich blue */
+      color: white;
+      padding: 6px 10px;
+      border-radius: 5px;
+      margin-right: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+      user-select: none;
+      transition: background-color 0.3s ease;
+    }
+    .lang-switcher a:hover {
+      background: #0055a5;
+    }
+    .lang-switcher .active {
+      background: #ffffff;
+      color: #003366;
+      cursor: default;
+      box-shadow: 0 0 5px #003366;
+    }
+    /* Contact links */
+    .contact-link {
+      color: inherit;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    /* WhatsApp icon styling */
+    .whatsapp-icon {
+      vertical-align: middle;
+      margin-right: 6px;
+      fill: #25D366;
+      width: 20px;
+      height: 20px;
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <div class="lang-toggle">
+    <!-- Language Switcher -->
+    <div class="lang-switcher">
       <a href="index.html">🇬🇧 English</a>
-      <a href="de.html" class="active">🇩🇪 Deutsch</a>
+      <span class="active">🇩🇪 Deutsch</span>
     </div>
-    <h1>🚙 Transportdienste für Expats in Zürich</h1>
-    <p>Zuverlässig, erschwinglich und immer pünktlich.</p>
+    <h1>🚙 Transportdienstleistungen für Expats in Zürich</h1>
+    <p>Zuverlässig, preiswert und immer pünktlich.</p>
   </header>
 
   <div class="container">
     <h2>Was ich anbiete</h2>
-    <p>Hallo! Ich biete eine einfache, persönliche Lösung, um Ihre Sachen stressfrei von Punkt A nach Punkt B zu transportieren. Ich fahre ein geräumiges SUV, das überraschend viel Platz bietet – ja, sogar ein Bett oder Sofa kann transportiert werden! Ich helfe gerne bei allem, von Kisten und Möbeln bis hin zum Tierarztbesuch mit Ihrem Haustier.</p>
+    <p>Hallo! Ich biete eine einfache, persönliche Lösung an, um Ihre Sachen von Punkt A nach Punkt B zu transportieren — ohne Stress. Ich fahre einen geräumigen SUV, der überraschend viel Volumen bietet. Ja — selbst ein Bett oder Sofa passen ins Auto! Ich helfe gerne mit allem, von Kartons und Möbeln bis hin zum Tierarztbesuch mit Ihrem Haustier.</p>
 
-    <p>Kein Stress wegen Treppen, Aufzügen oder Parkplätzen – dafür berechne ich keinen Aufpreis. Ich komme einfach vorbei, packe mit an und erledige den Job.</p>
+    <p>Keine Sorge um Treppen, Aufzüge oder Parkplätze — ich verlange keinen Aufpreis dafür. Ich erscheine einfach, helfe und erledige den Job.</p>
+    
+    <p><strong>Laderaumabmessungen:</strong><br>
+    Länge: 190 cm &nbsp;&nbsp; Breite: 110 cm &nbsp;&nbsp; Höhe: 90 cm</p>
 
-    <p><strong>Fahrzeug-Laderaummaße:</strong><br>
-      Länge: 190 cm &nbsp;&nbsp; Breite: 110 cm &nbsp;&nbsp; Höhe: 90 cm</p>
-
-    <p>So sieht das Fahrzeug aus:</p>
+    <p>Hier sehen Sie das Auto:</p>
     <div class="images">
       <img src="van1.jpg" alt="Transportfahrzeug" />
       <img src="van2.jpg" alt="Weiteres Transportfahrzeug" />
     </div>
 
     <h2>Preise</h2>
-    <p>Einfaches Preismodell: <strong>100 CHF pro Stunde</strong>. Keine versteckten Gebühren. Parken und Treibstoff gehen auf mich.</p>
+    <p>Einfache Preise: <strong>100 CHF pro Stunde</strong>. Das war's — keine versteckten Gebühren. Parken und Benzin übernehme ich.</p>
 
-    <p>Dieser Service ist speziell für Expats gedacht – ich spreche Englisch und weiß, wie es ist, in einem neuen Land anzukommen. Ich bin freundlich, flexibel und helfe Ihnen gerne beim Umzug.</p>
+    <h2>Arbeitszeiten</h2>
+    <p>Ich bin normalerweise nach Feierabend verfügbar — ab 17:00 Uhr, und möglicherweise auch an Wochenenden.</p>
 
     <h2>Kontakt</h2>
-    <p>📞 Telefon: 123-456-7890 &nbsp;&nbsp;📱 <a href="https://wa.me/1234567890" target="_blank">WhatsApp</a> – Hallo, danke für Ihre Nachricht. Wie kann ich helfen?</p>
-    <p>📧 E-Mail: contact@fastmove.com</p>
+    <p>📞 Telefon: 123-456-7890 &nbsp;&nbsp;
+      <a href="https://wa.me/41791234567?text=Hallo%2C%20vielen%20Dank%20für%20die%20Kontaktaufnahme..%20Wie%20kann%20ich%20Ihnen%20helfen%3F" target="_blank" rel="noopener" class="contact-link" aria-label="WhatsApp Kontakt">
+        <svg class="whatsapp-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M20.52 3.48A11.805 11.805 0 0012 0C5.373 0 0 5.373 0 12a11.98 11.98 0 001.639 6.012L0 24l6.11-1.589A11.976 11.976 0 0012 24c6.627 0 12-5.373 12-12a11.805 11.805 0 00-3.48-8.52zM12 21.529a9.514 9.514 0 01-4.879-1.404l-.349-.21-3.628.943.968-3.544-.227-.36A9.536 9.536 0 012.474 12c0-5.227 4.243-9.47 9.47-9.47 2.532 0 4.914.987 6.703 2.776a9.452 9.452 0 012.796 6.694c0 5.227-4.243 9.47-9.469 9.47zm5.204-7.148c-.286-.144-1.69-.83-1.95-.924-.26-.094-.45-.144-.64.144s-.734.924-.9 1.112c-.166.187-.33.21-.616.07-.286-.144-1.2-.442-2.28-1.4-.842-.75-1.41-1.67-1.574-1.956-.166-.286-.018-.44.126-.584.13-.13.286-.33.43-.495.144-.165.19-.286.286-.476.095-.19.05-.357-.025-.5-.074-.144-.64-1.54-.876-2.11-.23-.553-.466-.48-.64-.49l-.55-.01c-.19 0-.5.07-.76.357s-1 .974-1 2.37c0 1.397 1.028 2.75 1.173 2.945.144.19 2.028 3.1 4.91 4.342.686.296 1.22.472 1.637.604.686.22 1.31.19 1.8.115.55-.084 1.69-.69 1.928-1.36.238-.67.238-1.247.166-1.37-.07-.118-.26-.19-.545-.333z"/>
+        </svg>
+        WhatsApp
+      </a>
+    </p>
+    <p>📧 Email: kontakt@fastmove.com</p>
   </div>
 
   <footer>
-    &copy; Tatsächlich von mir erstellt
+    &copy; Erstellt tatsächlich von MIR
   </footer>
 
 </body>
