@@ -5,25 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Fast and Move Transporter</title>
   <link rel="icon" href="suv-icon.png" type="image/png" />
-
-  <!-- SEO Metadata -->
-  <meta name="description" content="FastMove Transporter – affordable transport services in Zurich, perfect for expats. Simple, reliable, and available after work hours.">
-  <meta name="keywords" content="Zurich moving, expat transport, Zurich van, moving SUV, cheap moving Zurich">
-  
-  <!-- Open Graph -->
-  <meta property="og:title" content="FastMove Transporter – Zurich" />
-  <meta property="og:description" content="Transport help for expats in Zurich. Simple, fast, and friendly!" />
-  <meta property="og:image" content="suv.jpg" />
-  <meta property="og:url" content="https://yourdomain.com/" />
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-
   <style>
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
-      background: #f4f4f4;
+      background: #ffffff;
+      color: #003366;
     }
 
     header {
@@ -34,20 +21,6 @@
       text-align: left;
       text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
       position: relative;
-    }
-
-    header::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0, 0, 0, 0.4);
-      z-index: 0;
-    }
-
-    header h1, header p, .lang-switcher {
-      position: relative;
-      z-index: 1;
     }
 
     .container {
@@ -75,20 +48,18 @@
     footer {
       text-align: center;
       padding: 20px;
-      background: #eee;
+      background: #003366;
+      color: white;
       font-size: 1.1em;
     }
 
-    h1, p {
-      margin: 10px 0;
+    h1, h2 {
+      color: #003366;
     }
 
     /* Language toggle buttons */
     .lang-switcher {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      z-index: 999;
+      position: absolute; top: 20px; right: 20px;
     }
 
     .lang-switcher a, .lang-switcher span {
@@ -115,28 +86,24 @@
       box-shadow: 0 0 5px #003366;
     }
 
-    /* Contact links */
     .contact-link {
-      color: inherit;
+      color: #003366;
       text-decoration: none;
       display: inline-flex;
       align-items: center;
       gap: 6px;
     }
 
-    /* WhatsApp icon styling */
+    .contact-link:hover {
+      text-decoration: underline;
+    }
+
     .whatsapp-icon {
       vertical-align: middle;
       margin-right: 6px;
       fill: #25D366;
       width: 20px;
       height: 20px;
-    }
-
-    /* Hover effect for all anchor links */
-    a:hover {
-      opacity: 0.8;
-      text-decoration: underline;
     }
   </style>
 </head>
@@ -157,7 +124,7 @@
     <p>Hi! I'm offering a simple, personal solution for moving your stuff from point A to point B — without the stress. I drive a spacious SUV that fits a surprisingly decent volume. Yes — even a bed or sofa can be moved by car! I'm happy to help with anything from boxes and furniture to taking your pet to the vet.</p>
 
     <p>No fuss about stairs, elevators, or parking — I won’t charge extra for any of that. I just show up, help out, and get the job done.</p>
-    
+
     <p><strong>Vehicle cargo dimensions:</strong><br>
     Length: 190 cm &nbsp;&nbsp; Width: 110 cm &nbsp;&nbsp; Height: 90 cm</p>
 
@@ -173,19 +140,18 @@
     <h2>Working Hours</h2>
     <p>I am usually available after working hours — starting from 17:00, and I might also be available on weekends.</p>
 
- <h2>Contact Me</h2>
-<p style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
-  <a href="tel:+411234567890" class="contact-link">📞 Phone: 123-456-7890</a>
-  <a href="https://wa.me/41791234567?text=Hi%2C%20thank%20you%20for%20getting%20in%20touch..%20how%20can%20I%20help%3F" target="_blank" rel="noopener" class="contact-link" aria-label="WhatsApp contact" style="color: #25D366;">
-    <svg class="whatsapp-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="#25D366" aria-hidden="true" focusable="false">
-      <path d="..."/>
-    </svg>
-    WhatsApp
-  </a>
-</p>
+    <h2>Contact Me</h2>
+    <p style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+      <a href="tel:+411234567890" class="contact-link">📞 Phone: 123-456-7890</a>
+      <a href="https://wa.me/41791234567?text=Hi%2C%20thank%20you%20for%20getting%20in%20touch..%20how%20can%20I%20help%3F" target="_blank" rel="noopener" class="contact-link" aria-label="WhatsApp contact">
+        <svg class="whatsapp-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#25D366" aria-hidden="true" focusable="false">
+          <path d="..."/>
+        </svg>
+        WhatsApp
+      </a>
+    </p>
 
-<p>📧 Email: <a href="mailto:contact@fastmove.com" class="contact-link">contact@fastmove.com</a></p>
-
+    <p>📧 Email: <a href="mailto:contact@fastmove.com" class="contact-link">contact@fastmove.com</a></p>
   </div>
 
   <footer>
