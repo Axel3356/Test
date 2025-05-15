@@ -5,8 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Fast and Move Transporter</title>
   <link rel="icon" href="suv-icon.png" type="image/png" />
+
+  <!-- SEO Metadata -->
+  <meta name="description" content="FastMove Transporter – affordable transport services in Zurich, perfect for expats. Simple, reliable, and available after work hours.">
+  <meta name="keywords" content="Zurich moving, expat transport, Zurich van, moving SUV, cheap moving Zurich">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="FastMove Transporter – Zurich" />
+  <meta property="og:description" content="Transport help for expats in Zurich. Simple, fast, and friendly!" />
+  <meta property="og:image" content="suv.jpg" />
+  <meta property="og:url" content="https://yourdomain.com/" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+    }
+
     header {
       background: url('zrh.jpg') no-repeat center center;
       background-size: cover;
@@ -16,17 +35,64 @@
       text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
       position: relative;
     }
-    .container { max-width: 900px; margin: auto; padding: 20px; background: white; }
-    .images { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin: 20px 0; }
-    .images img { width: 100%; max-width: 400px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-    footer { text-align: center; padding: 20px; background: #eee; font-size: 1.1em; }
-    h1, p { margin: 10px 0; }
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 0;
+    }
+
+    header h1, header p, .lang-switcher {
+      position: relative;
+      z-index: 1;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      background: white;
+    }
+
+    .images {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    .images img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+      font-size: 1.1em;
+    }
+
+    h1, p {
+      margin: 10px 0;
+    }
+
     /* Language toggle buttons */
     .lang-switcher {
-      position: absolute; top: 20px; right: 20px;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 999;
     }
+
     .lang-switcher a, .lang-switcher span {
-      background: #003366; /* Zurich blue */
+      background: #003366;
       color: white;
       padding: 6px 10px;
       border-radius: 5px;
@@ -37,15 +103,18 @@
       user-select: none;
       transition: background-color 0.3s ease;
     }
+
     .lang-switcher a:hover {
       background: #0055a5;
     }
+
     .lang-switcher .active {
       background: #ffffff;
       color: #003366;
       cursor: default;
       box-shadow: 0 0 5px #003366;
     }
+
     /* Contact links */
     .contact-link {
       color: inherit;
@@ -54,6 +123,7 @@
       align-items: center;
       gap: 6px;
     }
+
     /* WhatsApp icon styling */
     .whatsapp-icon {
       vertical-align: middle;
@@ -61,6 +131,12 @@
       fill: #25D366;
       width: 20px;
       height: 20px;
+    }
+
+    /* Hover effect for all anchor links */
+    a:hover {
+      opacity: 0.8;
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -97,19 +173,19 @@
     <h2>Working Hours</h2>
     <p>I am usually available after working hours — starting from 17:00, and I might also be available on weekends.</p>
 
-<h2>Contact Me</h2>
-
+ <h2>Contact Me</h2>
 <p style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
-  <span>📞 Phone: 123-456-7890</span>
-  <a href="https://wa.me/41791234567?text=Hi%2C%20thank%20you%20for%20getting%20in%20touch..%20how%20can%20I%20help%3F" target="_blank" rel="noopener" class="contact-link" aria-label="WhatsApp contact" style="display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: #25D366;">
+  <a href="tel:+411234567890" class="contact-link">📞 Phone: 123-456-7890</a>
+  <a href="https://wa.me/41791234567?text=Hi%2C%20thank%20you%20for%20getting%20in%20touch..%20how%20can%20I%20help%3F" target="_blank" rel="noopener" class="contact-link" aria-label="WhatsApp contact" style="color: #25D366;">
     <svg class="whatsapp-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="#25D366" aria-hidden="true" focusable="false">
-      <path d="M20.52 3.48A11.805 11.805 0 0012 0C5.373 0 0 5.373 0 12a11.98 11.98 0 001.639 6.012L0 24l6.11-1.589A11.976 11.976 0 0012 24c6.627 0 12-5.373 12-12a11.805 11.805 0 00-3.48-8.52zM12 21.529a9.514 9.514 0 01-4.879-1.404l-.349-.21-3.628.943.968-3.544-.227-.36A9.536 9.536 0 012.474 12c0-5.227 4.243-9.47 9.47-9.47 2.532 0 4.914.987 6.703 2.776a9.452 9.452 0 012.796 6.694c0 5.227-4.243 9.47-9.469 9.47zm5.204-7.148c-.286-.144-1.69-.83-1.95-.924-.26-.094-.45-.144-.64.144s-.734.924-.9 1.112c-.166.187-.33.21-.616.07-.286-.144-1.2-.442-2.28-1.4-.842-.75-1.41-1.67-1.574-1.956-.166-.286-.018-.44.126-.584.13-.13.286-.33.43-.495.144-.165.19-.286.286-.476.095-.19.05-.357-.025-.5-.074-.144-.64-1.54-.876-2.11-.23-.553-.466-.48-.64-.49l-.55-.01c-.19 0-.5.07-.76.357s-1 .974-1 2.37c0 1.397 1.028 2.75 1.173 2.945.144.19 2.028 3.1 4.91 4.342.686.296 1.22.472 1.637.604.686.22 1.31.19 1.8.115.55-.084 1.69-.69 1.928-1.36.238-.67.238-1.247.166-1.37-.07-.118-.26-.19-.545-.333z"/>
+      <path d="..."/>
     </svg>
     WhatsApp
   </a>
 </p>
 
-<p>📧 Email: contact@fastmove.com</p>
+<p>📧 Email: <a href="mailto:contact@fastmove.com" class="contact-link">contact@fastmove.com</a></p>
+
   </div>
 
   <footer>
