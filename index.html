@@ -131,6 +131,152 @@
     <!-- Contact Details Module -->
     <h2>Contact Me</h2>
 
+<!-- Add Font Awesome for icons (place once in <head> if not already added) -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+<!-- Social Share Buttons -->
+<div id="social-share" style="text-align:center; margin: 40px 0;">
+  <button
+    id="fb-share-btn"
+    aria-label="Share on Facebook"
+    style="
+      background: #1877f2;
+      color: #fff;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      margin: 0 8px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    "
+  >
+    <i class="fab fa-facebook-f"></i> Facebook
+  </button>
+
+  <a
+    href="https://www.instagram.com/YourInstagramHandle"
+    target="_blank"
+    aria-label="Instagram Profile"
+    style="
+      background: #e1306c;
+      color: #fff;
+      padding: 10px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 16px;
+      margin: 0 8px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    "
+    ><i class="fab fa-instagram"></i> Instagram</a
+  >
+
+  <button
+    id="twitter-share-btn"
+    aria-label="Share on Twitter"
+    style="
+      background: #1da1f2;
+      color: #fff;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      margin: 0 8px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    "
+  >
+    <i class="fab fa-twitter"></i> Twitter
+  </button>
+
+  <button
+    id="linkedin-share-btn"
+    aria-label="Share on LinkedIn"
+    style="
+      background: #0077b5;
+      color: #fff;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      margin: 0 8px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    "
+  >
+    <i class="fab fa-linkedin-in"></i> LinkedIn
+  </button>
+
+  <button
+    id="whatsapp-share-btn"
+    aria-label="Share on WhatsApp"
+    style="
+      background: #25d366;
+      color: #fff;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      margin: 0 8px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    "
+  >
+    <i class="fab fa-whatsapp"></i> WhatsApp
+  </button>
+</div>
+
+<script>
+  const currentUrl = encodeURIComponent(window.location.href);
+  const shareText = encodeURIComponent(
+    "Check out Help Me Move - Affordable and flexible moving help!"
+  );
+
+  document.getElementById("fb-share-btn").addEventListener("click", () => {
+    window.open(
+      `https://www.facebook.com/sharer/sharer.php?u=${currentUrl}`,
+      "fbShareWindow",
+      "width=550,height=450"
+    );
+  });
+
+  document.getElementById("twitter-share-btn").addEventListener("click", () => {
+    window.open(
+      `https://twitter.com/intent/tweet?url=${currentUrl}&text=${shareText}`,
+      "twitterShareWindow",
+      "width=550,height=450"
+    );
+  });
+
+  document.getElementById("linkedin-share-btn").addEventListener("click", () => {
+    window.open(
+      `https://www.linkedin.com/sharing/share-offsite/?url=${currentUrl}`,
+      "linkedinShareWindow",
+      "width=550,height=450"
+    );
+  });
+
+  document.getElementById("whatsapp-share-btn").addEventListener("click", () => {
+    window.open(
+      `https://api.whatsapp.com/send?text=${shareText}%20${currentUrl}`,
+      "whatsappShareWindow",
+      "width=550,height=450"
+    );
+  });
+</script>
 
 
   </div>
