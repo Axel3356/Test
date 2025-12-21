@@ -1,136 +1,178 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VR714PFK6E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VR714PFK6E');
+  </script>
+  
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- some test with a font -->
-<link rel="stylesheet" href="https://fonts.cdnfonts.com/css/coral-pixels">
-
   
-  <title>Help Me Move – Günstige Umzugshilfe in Zürich & Umgebung</title>
+  <title>Cheap Moving Help & Furniture Transport Zurich | HelpMeMove</title>
 
-  <!-- SEO Meta -->
-  <meta name="description" content="Günstige und flexible Umzugshilfe für Expats, Studenten und Einheimische in Zürich, Aargau und der Region Zürich. Transport mit SUV, haustierfreundliche Umzüge und Hilfe bei Boxen oder Möbeln." />
-  <meta name="keywords" content="Umzug Zürich, Kanton Zürich, Zuerich Umzugsservice, günstiger Transport Zürich, Umzugshilfe Aargau, SUV Transport, haustierfreundlicher Umzug, Hundetransport, Katzensicher, Boxen, Möbelhilfe, Region Zürich, Studenten Umzug, günstiger Umzug Zürich" />
+  <meta name="description" content="Personal and cheap moving help in Zurich. Specialized in furniture & bed transport for expats. Pet-friendly SUV transport in Zurich, Aargau and surroundings. No hidden fees." />
+  <meta name="keywords" content="cheap moving zurich, furniture transport zurich, bett transportieren zürich, moving help expats, pet friendly move, suv transport, bed moving help, small relocation zurich" />
   <meta name="author" content="Help Me Move" />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://axel3356.github.io/Test/de.html" />
-  <link rel="alternate" hreflang="en" href="https://axel3356.github.io/Test/index.html" />
+  <link rel="canonical" href="https://www.helpmemove.ch/" />
+  
+  <link rel="alternate" hreflang="en" href="https://www.helpmemove.ch/" />
+  <link rel="alternate" hreflang="de" href="https://www.helpmemove.ch/de.html" />
+  <link rel="alternate" hreflang="x-default" href="https://www.helpmemove.ch/" />
   <link rel="icon" href="suv-icon.png" type="image/png" />
 
-  <!-- Open Graph for Social Sharing -->
-  <meta property="og:title" content="Help Me Move – Expatsfreundliche Umzugshilfe in Zürich & Aargau" />
-  <meta property="og:description" content="Zuverlässige und günstige Umzugshilfe für Expats und Haustierbesitzer in Zürich und umliegenden Kantonen. Transport mit SUV für Boxen, Haustiere und Möbel." />
-  <meta property="og:image" content="https://axel3356.github.io/Test/van1.jpg" />
-  <meta property="og:url" content="https://axel3356.github.io/Test/de.html" />
-  
+  <meta property="og:title" content="Cheap Moving & Bed Transport Help in Zurich" />
+  <meta property="og:description" content="Personal, affordable, and pet-friendly moving help for expats. SUV transport for furniture and boxes." />
+  <meta property="og:image" content="https://helpmemove.ch/SUV_ext.webp" />
+  <meta property="og:url" content="https://helpmemove.ch/" />
+
   <style>
-  body, h1, p {
-    font-family: 'Coral Pixels', sans-serif;
-  }
+    :root { --main-blue: #003366; --whatsapp-green: #25D366; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background: #f9f9f9; color: #333; line-height: 1.6; }
+    
     header {
-      background: url('zrh.jpg') no-repeat center center;
+      background: linear-gradient(rgba(0,51,102,0.7), rgba(0,51,102,0.7)), url('zrh.jpg') no-repeat center center;
       background-size: cover;
       color: white;
-      padding: 80px 40px;
-      text-align: left;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
-      position: relative;
+      padding: 100px 20px;
+      text-align: center;
     }
-    .container { max-width: 900px; margin: auto; padding: 20px; background: white; }
-    .images { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin: 20px 0; }
-    .images img { width: 100%; max-width: 400px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-    footer { text-align: center; padding: 20px; background: #eee; font-size: 1.1em; }
-    h1, p { margin: 10px 0; }
-    /* Language toggle buttons */
-    .lang-switcher {
-      position: absolute; top: 20px; right: 20px;
+
+    .container { max-width: 900px; margin: -40px auto 40px; padding: 30px; background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+    
+    /* Responsive Images */
+    .image-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 20px 0; }
+    .image-grid img { width: 100%; border-radius: 8px; object-fit: cover; height: 250px; }
+    
+    @media (max-width: 600px) {
+      .image-grid { grid-template-columns: 1fr; }
+      header { padding: 60px 20px; }
+      .container { margin-top: -20px; padding: 20px; }
     }
-    .lang-switcher a, .lang-switcher span {
-      background: #003366; /* Zurich blue */
-      color: white;
-      padding: 6px 10px;
-      border-radius: 5px;
-      margin-right: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      cursor: pointer;
-      user-select: none;
-      transition: background-color 0.3s ease;
+
+    h1 { font-size: 2.2rem; margin-bottom: 10px; }
+    h2 { color: var(--main-blue); border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 30px; }
+    
+    .price-tag { background: #e7f3ff; padding: 15px; border-left: 5px solid var(--main-blue); font-size: 1.2rem; font-weight: bold; }
+    
+    /* FAQ Styling */
+    .faq-item { margin-bottom: 20px; padding: 15px; background: #fff; border: 1px solid #ddd; border-radius: 8px; }
+    .faq-item h3 { margin-top: 0; font-size: 1.1rem; color: #444; }
+
+    .lang-switcher { position: absolute; top: 20px; right: 20px; display: flex; gap: 10px; }
+    .lang-switcher a, .lang-switcher span { 
+      background: rgba(255,255,255,0.2); color: white; padding: 8px 12px; border-radius: 20px; 
+      text-decoration: none; font-size: 0.9rem; backdrop-filter: blur(5px);
     }
-    .lang-switcher a:hover {
-      background: #0055a5;
-    }
-    .lang-switcher .active {
-      background: #ffffff;
-      color: #003366;
-      cursor: default;
-      box-shadow: 0 0 5px #003366;
-    }
-    /* Contact links */
-    .contact-link {
-      color: inherit;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-    }
-    /* WhatsApp icon styling */
-    .whatsapp-icon {
-      vertical-align: middle;
-      margin-right: 6px;
-      fill: #25D366;
-      width: 20px;
-      height: 20px;
-    }
+    .lang-switcher .active { background: white; color: var(--main-blue); font-weight: bold; }
+
+    footer { text-align: center; padding: 40px; background: #333; color: white; margin-top: 40px; }
+    .cta-button { display: inline-flex; align-items: center; background: var(--whatsapp-green); color: white; padding: 12px 24px; border-radius: 50px; text-decoration: none; font-weight: bold; margin-top: 10px; }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Help Me Move - Personal Moving Zurich",
+    "image": "https://helpmemove.ch/SUV_ext.webp",
+    "url": "https://www.helpmemove.ch/",
+    "telephone": "+41782421211",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Zurich",
+      "addressCountry": "CH"
+    },
+    "geo": {
+      "@type": "GeoCircle",
+      "itemOffered": { "@type": "Service", "name": "Moving Help" },
+      "geoMidpoint": { "@type": "GeoCoordinates", "latitude": 47.3769, "longitude": 8.5417 },
+      "geoRadius": "40000"
+    }
+  }
+  </script>
 </head>
 <body>
 
   <header>
-    <!-- Language Switcher -->
     <div class="lang-switcher">
-      <a href="index.html">🇬🇧 English</a>
-      <span class="active">🇩🇪 Deutsch</span>
+      <span class="active">🇬🇧 EN</span>
+      <a href="de.html">🇩🇪 DE</a>
     </div>
-    <h1>🚙 Transportdienstleistungen für Expats in Zürich & Umgebung</h1>
-    <p>Zuverlässig, preiswert und immer pünktlich.</p>
+    <h1>Personal & Cheap Moving Help in Zurich</h1>
+    <p>Reliable Furniture Transport for Expats, Students & Locals</p>
   </header>
 
   <div class="container">
-    <h2>Was ich anbiete</h2>
-    <p>Hallo! Ich biete eine einfache, persönliche Lösung an, um Ihre Sachen von Punkt A nach Punkt B zu transportieren — ohne Stress. Ich fahre einen geräumigen SUV, der überraschend viel Volumen bietet. Ja — selbst ein Bett oder Sofa passen ins Auto! Ich helfe gerne mit allem, von Kartons und Möbeln bis hin zum Tierarztbesuch mit Ihrem Haustier.</p>
-
-    <p>Keine Sorge um Treppen, Aufzüge oder Parkplätze — ich verlange keinen Aufpreis dafür. Ich erscheine einfach, helfe und erledige den Job.</p>
     
-    <p><strong>Laderaumabmessungen:</strong><br>
-    Länge: 190 cm &nbsp;&nbsp; Breite: 110 cm &nbsp;&nbsp; Höhe: 90 cm</p>
+    <h2>Affordable Furniture Transport & Small Moves</h2>
+    <p>Hi! I'm providing a personal, stress-free solution for moving your belongings in <strong>Zurich, Aargau, and surrounding areas</strong>. Skip the big moving companies and their hidden fees.</p>
+    
+    <p>Whether you need to move a <strong>bed (Bett transportieren)</strong>, a sofa, or several boxes, my spacious SUV is optimized to fit a surprising volume. As an expat, I focus on being <strong>reliable, pet-friendly, and affordable</strong>.</p>
 
-<p>Hier sehen Sie das Auto:</p>
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 16px;">
-  <img src="SUV_ext.jpg"
-       alt="Geräumiger SUV für Umzüge in Zürich mit Haustieren oder Möbeln"
-       style="flex: 1 1 300px; max-width: 45%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; object-position: top center; border-radius: 10px;" />
+    <div class="price-tag">
+      💰 Simple Pricing: 100 CHF / Hour (Fuel & Parking included!)
+    </div>
 
-  <img src="SUV_int.jpg"
-       alt="Innenansicht des Autos zur besseren Vorstellung des Stauraums"
-       style="flex: 1 1 300px; max-width: 45%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 10px;" />
-</div>
+    <h2>Smart Space: What fits in the SUV?</h2>
+    <p>Don't let the car size fool you. With <strong>190cm length and 110cm width</strong>, I can move:</p>
+    <ul>
+      <li><strong>Beds & Mattresses</strong> (up to 180x200cm folded safely)</li>
+      <li>Sofas, Wardrobes (disassembled), and Dining Tables</li>
+      <li>Up to 15-20 Moving Boxes</li>
+      <li>Your Pets (Safety first!)</li>
+    </ul>
 
+    <div class="image-grid">
+      <img src="SUV_ext.webp" alt="HelpMeMove SUV for cheap furniture transport in Zurich">
+      <img src="SUV_int.webp" alt="Inside view of SUV moving space for beds and boxes">
+    </div>
 
-    <h2>Preise</h2>
-    <p>Einfache Preise: <strong>100 CHF pro Stunde</strong>. Das war's — keine versteckten Gebühren. Parken und Benzin übernehme ich.</p>
+    <h2>Frequently Asked Questions (FAQ)</h2>
+    
+    <div class="faq-item">
+      <h3>Can you move a large bed?</h3>
+      <p>Yes! By folding the mattress and optimizing the cabin space, I can transport beds up to 180x200cm. It's the most <strong>cheap bed transport</strong> option in Zurich.</p>
+    </div>
 
-    <h2>Arbeitszeiten</h2>
-    <p>Ich bin normalerweise nach Feierabend verfügbar — ab 17:00 Uhr, und möglicherweise auch an Wochenenden.</p>
+    <div class="faq-item">
+      <h3>How do you protect my TV?</h3>
+      <p>I use the "sandwich" method: I fold the mattress in a U-shape in the back, creating a soft, protective nest for your TV or mirrors during transit.</p>
+    </div>
 
-    <h2>Kontakt</h2>
+    <div class="faq-item">
+      <h3>Is it really pet-friendly?</h3>
+      <p>Absolutely. Your dogs or cats are welcome to ride in the SUV. No extra fees, just a safe trip for your furry friends.</p>
+    </div>
 
+    <h2>Working Hours</h2>
+    <p>Available on weekdays starting <strong>17:00</strong> and <strong>Full-time on Weekends</strong>. Perfect for those who need to move after work!</p>
 
+    <h2>Book Your Move Now</h2>
+    <div style="text-align: center; padding: 20px;">
+      <a href="https://wa.me/41782421211" target="_blank" class="cta-button">
+        <i class="fab fa-whatsapp" style="margin-right: 10px;"></i> Message me on WhatsApp
+      </a>
+      <p>Or call: <a href="tel:+41782421211">+41 78 242 12 11</a></p>
+    </div>
+
+  </div>
+
+  <section style="text-align: center; padding: 20px;">
+    <h3>Share my service with other expats</h3>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://helpmemove.ch" target="_blank" style="color: #1877F2; font-size: 2rem; margin: 0 15px;"><i class="fab fa-facebook"></i></a>
+    <a href="https://wa.me/?text=Check%20out%20this%20moving%20help%20in%20Zurich:%20https://helpmemove.ch" target="_blank" style="color: var(--whatsapp-green); font-size: 2rem; margin: 0 15px;"><i class="fab fa-whatsapp"></i></a>
+  </section>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <footer>
-    &copy; Erstellt tatsächlich von MIR
+    <p>&copy; 2025 Help Me Move Zurich. Reliable. Personal. Cheap.</p>
   </footer>
 
 </body>
