@@ -234,7 +234,7 @@
       z-index: 10;
     }
     .lang-switcher a, .lang-switcher span {
-      background: #003d82;
+      background: rgba(255, 255, 255, 0.2);
       color: white;
       padding: 8px 14px;
       border-radius: 6px;
@@ -245,14 +245,18 @@
       user-select: none;
       transition: all 0.3s ease;
       display: inline-block;
+      border: 2px solid transparent;
     }
     .lang-switcher a:hover {
-      background: #0055a5;
+      background: rgba(255, 255, 255, 0.3);
+      border-color: rgba(255, 255, 255, 0.5);
     }
     .lang-switcher .active {
       background: #ffffff;
       color: #003d82;
       cursor: default;
+      font-weight: 700;
+      border-color: #ffffff;
     }
 
     /* Service Areas Box - Zurich Blue & White */
@@ -314,7 +318,6 @@
       flex: 1 1 300px;
       max-width: 45%;
       height: auto;
-      object-fit: cover;
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
@@ -543,8 +546,32 @@
     <p style="font-size: 1.1em; margin-bottom: 15px;">
       <strong>Help Me Move</strong> - Persönlicher Umzugsservice
     </p>
-    <p>Zürich • Winterthur • Zug • Baden • Aargau</p>
-    <p style="margin-top: 15px;">
+    
+    <!-- Service Triangle Map -->
+    <div style="margin: 20px auto; max-width: 300px;">
+      <svg viewBox="0 0 200 180" style="width: 100%; height: auto;">
+        <!-- Triangle lines -->
+        <line x1="100" y1="20" x2="30" y2="150" stroke="white" stroke-width="2" stroke-dasharray="4,4"/>
+        <line x1="30" y1="150" x2="170" y2="150" stroke="white" stroke-width="2" stroke-dasharray="4,4"/>
+        <line x1="170" y1="150" x2="100" y2="20" stroke="white" stroke-width="2" stroke-dasharray="4,4"/>
+        
+        <!-- City markers -->
+        <circle cx="100" cy="20" r="6" fill="#ffffff"/>
+        <circle cx="30" cy="150" r="6" fill="#ffffff"/>
+        <circle cx="170" cy="150" r="6" fill="#ffffff"/>
+        
+        <!-- City labels -->
+        <text x="100" y="12" text-anchor="middle" fill="white" font-size="14" font-weight="bold">Winterthur</text>
+        <text x="30" y="170" text-anchor="middle" fill="white" font-size="14" font-weight="bold">Zürich</text>
+        <text x="170" y="170" text-anchor="middle" fill="white" font-size="14" font-weight="bold">Zug</text>
+      </svg>
+    </div>
+    
+    <p style="margin-top: 15px;">Bediene auch: Baden • Aarau • Kloten • Bülach • Regensdorf</p>
+    <p style="margin-top: 20px; font-size: 0.95em; opacity: 0.9;">
+      Expat-freundliche internationale Umzüge • Haustierfreundlicher Transport • Studenten-Umzugsdienste
+    </p>
+    <p style="margin-top: 20px;">
       <a href="https://share.google/Obitg854dF8LGWUUu" target="_blank" rel="noopener">⭐ Google-Bewertungen</a> • 
       <a href="index.html">English</a>
     </p>
