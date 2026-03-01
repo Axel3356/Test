@@ -47,14 +47,17 @@
     "@context": "https://schema.org",
     "@type": "MovingCompany",
     "@id": "https://www.helpmemove.ch/#organization",
-    "name": "Help Me Move - Personal Moving &amp; Furniture Transport",
+    "name": "Help Me Move - Personal Moving & Furniture Transport",
     "url": "https://www.helpmemove.ch/",
     "telephone": "+41782421211",
     "email": "helpmemovech@gmail.com",
     "priceRange": "100 CHF/hour",
     "image": "https://www.helpmemove.ch/SUV_ext.webp",
     "description": "Personal, affordable moving and transport service in Zurich and Aargau. An alternative to big moving companies — no agency overhead, you deal directly with the driver. 100 CHF per hour, pet-friendly, no hidden fees.",
-    "sameAs": ["https://maps.google.com/?cid=1836111818228198756"],
+    "sameAs": [
+      "https://share.google/HwJ97dqG2Jmu7bA5g",
+      "https://g.page/r/CaLLD3iSt48bEBM/review"
+    ],
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Zurich",
@@ -152,7 +155,7 @@
       {
         "@type": "Question",
         "name": "How far in advance do I need to book?",
-        "acceptedAnswer": {"@type": "Answer", "text": "As early as possible is always better, but last-minute requests are welcome too. Just send a WhatsApp or give me a call."}
+        "acceptedAnswer": {"@type": "Answer", "text": "As early as possible is always better, but last-minute requests are welcome too. Just WhatsApp, email, or give me a call."}
       },
       {
         "@type": "Question",
@@ -172,7 +175,7 @@
     *, *::before, *::after { box-sizing: border-box; }
     body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; line-height: 1.7; color: #333; }
 
-    /* Header - original Zurich photo style */
+    /* Header */
     header {
       background: url('zrh.jpg') no-repeat center center;
       background-size: cover;
@@ -239,7 +242,7 @@
       font-size: 1.1rem;
     }
 
-    /* Highlight box (pun / differentiator) */
+    /* Highlight box */
     .highlight-box {
       background: #fff8e1;
       border-left: 4px solid #f0a500;
@@ -256,14 +259,30 @@
     .faq-item h3 { color: #003366; margin-bottom: 6px; font-size: 1.1rem; }
     .faq-item p { margin: 0; }
 
-    /* Contact */
-    .contact-section { margin-top: 40px; border-top: 2px solid #eee; padding-top: 20px; }
+    /* Contact - centered */
+    .contact-section {
+      margin-top: 40px;
+      border-top: 2px solid #eee;
+      padding-top: 20px;
+      text-align: center;
+    }
+    .contact-section p { margin: 8px 0; }
+    .contact-section a { color: #003366; }
+
     .contact-btn {
-      display: inline-flex; align-items: center; gap: 8px;
-      background: #25D366; color: white;
-      padding: 14px 24px; border-radius: 6px;
-      text-decoration: none; font-weight: bold; font-size: 1rem;
-      margin-top: 12px; transition: background 0.2s, transform 0.2s;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: #25D366;
+      color: white;
+      padding: 14px 28px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      margin-top: 12px;
+      transition: background 0.2s, transform 0.2s;
     }
     .contact-btn:hover { background: #1ebe57; transform: scale(1.02); }
 
@@ -335,8 +354,8 @@
   <div class="container">
 
     <h2>Personal Moving Help in Zurich &amp; Aargau</h2>
-    <p>Need a moving company in Zurich but hate the idea of a 300 CHF minimum and three strangers in your flat? I get it. I offer a simple, personal moving service with a spacious SUV — <strong>boxes, furniture, even a sofa or a bed!</strong></p>
-    <p>As an expat myself, I know how stressful it can be to move in a new country. No agency overhead, no dispatchers — you deal directly with me. I speak English, I show up on time, and your pets are always welcome.</p>
+    <p>Need a moving company in Zurich but hate the idea of a 300 CHF minimum and three strangers in your flat? I get it. I offer a simple, personal moving service with a spacious SUV &mdash; <strong>boxes, furniture, even a sofa or a bed!</strong></p>
+    <p>As an expat myself, I know how stressful it can be to move in a new country. No agency overhead, no dispatchers &mdash; you deal directly with me. I speak English, I show up on time, and your pets are always welcome.</p>
 
     <div class="highlight-box">
       No fuss about stairs, elevators, or parking &mdash; I won&rsquo;t charge extra for any of that. I just show up, help out, get the job done &mdash; and you&rsquo;ll be in great company.
@@ -366,7 +385,7 @@
 
       <div class="faq-item">
         <h3>How much does a moving company cost in Zurich?</h3>
-        <p>Big moving companies in Zurich typically charge 150&ndash;300 CHF per hour with minimums of 3&ndash;4 hours. Here the rate is a flat <strong>100 CHF per hour</strong> &mdash; all-inclusive, no minimums, no extra charges for stairs, fuel, or parking.</p>
+        <p>Big moving companies in Zurich typically charge 150&ndash;300 CHF per hour with minimums of 3&ndash;4 hours. Here the rate is a flat <strong>100 CHF per hour</strong> &mdash; no minimums, no extra charges for stairs, fuel, or parking.</p>
       </div>
 
       <div class="faq-item">
@@ -411,7 +430,7 @@
 
       <div class="faq-item">
         <h3>How far in advance do I need to book?</h3>
-        <p>As early as possible is always better, but last-minute requests are welcome too. Just send a WhatsApp or give me a call.</p>
+        <p>As early as possible is always better, but last-minute requests are welcome too. Just WhatsApp, email, or give me a call.</p>
       </div>
 
     </div>
@@ -419,8 +438,8 @@
     <!-- Contact -->
     <div class="contact-section">
       <h2>Contact Me</h2>
-      <p>&#128222; Phone: <a href="tel:+41782421211">+41 78 242 12 11</a></p>
-      <p>&#128231; Email: <a href="mailto:helpmemovech@gmail.com">helpmemovech@gmail.com</a></p>
+      <p>&#128222; <a href="tel:+41782421211">+41 78 242 12 11</a></p>
+      <p>&#128231; <a href="mailto:helpmemovech@gmail.com">helpmemovech@gmail.com</a></p>
 
       <a href="https://wa.me/41782421211" class="contact-btn" target="_blank" rel="noopener" aria-label="Contact on WhatsApp">
         <svg class="whatsapp-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
@@ -430,7 +449,7 @@
       </a>
 
       <div class="reviews-row">
-        <a href="https://maps.google.com/?cid=1836111818228198756" target="_blank" rel="noopener">See my Google Reviews</a>
+        <a href="https://share.google/HwJ97dqG2Jmu7bA5g" target="_blank" rel="noopener">See my Google Reviews</a>
         <span style="color:#bbb;">&middot;</span>
         <a href="https://g.page/r/CaLLD3iSt48bEBM/review" target="_blank" rel="noopener">Leave a Review</a>
       </div>
