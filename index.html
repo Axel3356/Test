@@ -66,12 +66,21 @@
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 47.3769,
-      "longitude": 8.5417
+      "latitude": 47.321276,
+      "longitude": 8.5285466
     },
     "areaServed": [
       {"@type": "City", "name": "Zurich"},
+      {"@type": "City", "name": "Winterthur"},
+      {"@type": "City", "name": "Baden"},
       {"@type": "City", "name": "Aarau"},
+      {"@type": "City", "name": "Dietikon"},
+      {"@type": "City", "name": "Schlieren"},
+      {"@type": "City", "name": "Opfikon"},
+      {"@type": "City", "name": "Regensdorf"},
+      {"@type": "City", "name": "Adliswil"},
+      {"@type": "City", "name": "Thalwil"},
+      {"@type": "City", "name": "Wädenswil"},
       {"@type": "AdministrativeArea", "name": "Kanton Zürich"},
       {"@type": "AdministrativeArea", "name": "Aargau"}
     ],
@@ -140,7 +149,7 @@
         "name": "What areas do you cover?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Zurich city, the greater Zurich area (Kanton Zürich), and Aargau including Aarau. Longer-distance moves to other cantons are possible on request."
+          "text": "I cover Zurich city, the greater Zurich area (Kanton Zürich), and Aargau including Aarau — roughly a 40 km radius from central Zurich. This includes Winterthur, Baden, Dietikon, Schlieren, Opfikon, Regensdorf, Adliswil, Thalwil, and Wädenswil. Longer trips to other cantons (Basel, Bern, Lucerne) are possible on request."
         }
       },
       {
@@ -148,7 +157,7 @@
         "name": "Can you move a sofa or a bed?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. The SUV cargo space is 190 cm long, 110 cm wide, and 80 cm high, which fits most sofas, single and double beds, wardrobes, and large boxes."
+          "text": "Yes. The SUV cargo space is 190 cm long, 110 cm wide, and 80 cm high, which fits most sofas, single and double beds, wardrobes, and large boxes. Many modern mattresses can be folded in half to save space. For bed frames, disassembling them beforehand (removing legs, bundling slats) helps everything fit more efficiently and reduces the number of trips needed."
         }
       },
       {
@@ -234,15 +243,16 @@
     body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; line-height: 1.7; color: #333; }
 
     header {
-      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('zrh.jpg') no-repeat center center;
+      background: url('zrh.jpg') no-repeat center center;
       background-size: cover;
       color: white;
       padding: 80px 40px;
       text-align: left;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
       position: relative;
     }
-    header h1 { font-size: 2rem; margin: 0 0 10px; text-shadow: 2px 2px 6px rgba(0,0,0,0.7); }
-    header p { font-size: 1.15rem; margin: 0; text-shadow: 1px 1px 4px rgba(0,0,0,0.6); }
+    header h1 { font-size: 2rem; margin: 0 0 10px; }
+    header p { font-size: 1.15rem; margin: 0; }
 
     .lang-switcher { position: absolute; top: 20px; right: 20px; }
     .lang-switcher a, .lang-switcher span {
@@ -364,12 +374,12 @@
 
       <div class="faq-item">
         <h3>What areas do you cover?</h3>
-        <p>Zurich city, the greater Zurich area (Kanton Zürich), and Aargau including Aarau. Longer-distance moves to other Swiss cantons are possible — just ask.</p>
+        <p>I cover <strong>Zurich city, the greater Zurich area (Kanton Zürich), and Aargau including Aarau</strong> — roughly a 40 km radius from central Zurich. This includes areas like Winterthur, Baden, Dietikon, Schlieren, Opfikon, Regensdorf, Adliswil, Thalwil, and Wädenswil. You can <a href="https://www.google.com/maps/place/Help+Me+Move+-+Personal+Moving+%26+Furniture+Transport/@47.3241595,8.5221226,10.19z/data=!4m6!3m5!1s0x4a479a26fe7039bf:0x1b8fb792780fcba2!8m2!3d47.321276!4d8.5285466!16s%2Fg%2F11ytts7mn9?hl=en" target="_blank" rel="noopener" style="color:#003366; font-weight:bold;">see the service area on Google Maps</a>. Longer trips to other cantons (Basel, Bern, Lucerne, etc.) are possible — just contact me.</p>
       </div>
 
       <div class="faq-item">
         <h3>Can you move a sofa or a bed?</h3>
-        <p>Yes! The SUV cargo space is 190 cm long, 110 cm wide, and 80 cm high — fits most sofas, single and double beds, wardrobes, and large boxes.</p>
+        <p>Yes! The SUV cargo space is 190 cm long, 110 cm wide, and 80 cm high — fits most sofas, single and double beds, wardrobes, and large boxes. <strong>Tip:</strong> Many modern mattresses can be folded in half, which saves a lot of space. For bed frames, it helps to disassemble them beforehand (legs off, slats bundled) so everything fits more efficiently and we can get it all done in fewer trips.</p>
       </div>
 
       <div class="faq-item">
@@ -417,7 +427,7 @@
     <div class="contact-section">
       <h2>Contact Me</h2>
       <p>📞 Phone: <a href="tel:+41782421211">+41 78 242 12 11</a></p>
-      <p>📧 Email: <a href="mailto:helpmemovech@gmail.com">helpmemovech@gmail.com</a></p>
+      <p>📧 Email: <a href="/cdn-cgi/l/email-protection#9ff7faf3eff2faf2f0e9fafcf7dff8f2fef6f3b1fcf0f2"><span class="__cf_email__" data-cfemail="f29a979e829f979f9d8497919ab2959f939b9edc919d9f">[email&#160;protected]</span></a></p>
 
       <a href="https://wa.me/41782421211" class="contact-btn" target="_blank" rel="noopener" aria-label="Contact on WhatsApp">
         <svg class="whatsapp-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
@@ -453,9 +463,4 @@
 
   <!-- Footer -->
   <footer>
-    <p>© 2026 Help Me Move · Zurich & Aargau, Switzerland</p>
-    <p><a href="de.html">🇩🇪 Deutsch version</a></p>
-  </footer>
-
-</body>
-</html>
+    <p>© 
