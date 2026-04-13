@@ -15,7 +15,7 @@
   <title>Moving Company Zurich | Affordable Moving Help Zurich | Help Me Move</title>
 
   <!-- SEO Meta -->
-  <meta name="description" content="Looking for a moving company in Zurich? Get affordable, personal moving help — no agency overhead. SUV transport for expats, students &amp; pet owners. Bed moving, sofa transport, vet trips. 100 CHF/hr, no hidden fees." />
+  <meta name="description" content="Looking for a moving company or furniture taxi in Zurich? Affordable, personal moving help — SUV transport for expats, students &amp; pet owners. Bed moving, sofa transport, recycling centre runs, vet trips. 100 CHF/hr, no hidden fees." />
   <meta name="author" content="Help Me Move" />
   <meta name="robots" content="index, follow" />
 
@@ -27,8 +27,8 @@
   <link rel="icon" href="suv-icon.png" type="image/png" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Help Me Move - Expat-Friendly Moving Help in Zurich &amp; Aargau" />
-  <meta property="og:description" content="Affordable personal moving help in Zurich &amp; Aargau. No agency overhead — you deal directly with me. 100 CHF/hr, pet-friendly, no hidden fees." />
+  <meta property="og:title" content="Help Me Move - Furniture Taxi &amp; Moving Help in Zurich &amp; Aargau" />
+  <meta property="og:description" content="Affordable personal moving help in Zurich &amp; Aargau. Furniture taxi, recycling centre runs, pet transport. 100 CHF/hr, no hidden fees." />
   <meta property="og:image" content="https://www.helpmemove.ch/SUV_ext.webp" />
   <meta property="og:url" content="https://www.helpmemove.ch/" />
   <meta property="og:type" content="website" />
@@ -36,8 +36,8 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Help Me Move - Moving Help in Zurich &amp; Aargau" />
-  <meta name="twitter:description" content="Personal, affordable moving help in Zurich. 100 CHF/hr. Pet-friendly. No hidden fees." />
+  <meta name="twitter:title" content="Help Me Move - Moving Help &amp; Furniture Taxi Zurich" />
+  <meta name="twitter:description" content="Personal, affordable moving help in Zurich. Furniture taxi, recycling runs. 100 CHF/hr. Pet-friendly." />
   <meta name="twitter:image" content="https://www.helpmemove.ch/SUV_ext.webp" />
 
   <!-- MovingCompany Schema -->
@@ -52,10 +52,8 @@
     "email": "helpmemovech@gmail.com",
     "priceRange": "100 CHF/hour",
     "image": "https://www.helpmemove.ch/SUV_ext.webp",
-    "description": "Personal, affordable moving and transport service in Zurich and Aargau. An alternative to big moving companies — no agency overhead, you deal directly with the driver. 100 CHF per hour, pet-friendly, no hidden fees.",
-    "sameAs": [
-      "https://share.google/HwJ97dqG2Jmu7bA5g"
-    ],
+    "description": "Personal, affordable moving and transport service in Zurich and Aargau. Furniture taxi, recycling centre transport, bed and sofa moving, pet transport. An alternative to big moving companies — no agency overhead. 100 CHF per hour, pet-friendly, no hidden fees.",
+    "sameAs": ["https://share.google/HwJ97dqG2Jmu7bA5g"],
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Zurich",
@@ -77,6 +75,8 @@
       "@type": "OfferCatalog",
       "name": "Moving Services",
       "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Furniture Taxi Zurich"}, "price": "100", "priceCurrency": "CHF", "unitCode": "HUR"},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Recycling Centre Transport Zurich"}, "price": "100", "priceCurrency": "CHF", "unitCode": "HUR"},
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Bed and Mattress Moving Zurich"}, "price": "100", "priceCurrency": "CHF", "unitCode": "HUR"},
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Sofa and Couch Transport Zurich"}, "price": "100", "priceCurrency": "CHF", "unitCode": "HUR"},
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Expat Moving Help Zurich"}, "price": "100", "priceCurrency": "CHF", "unitCode": "HUR"},
@@ -110,6 +110,16 @@
       },
       {
         "@type": "Question",
+        "name": "Do you offer furniture taxi service in Zurich?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Yes — furniture taxi is exactly what this service is. Need a single item picked up or delivered across Zurich or Aargau? No need to hire a full moving company. Just the SUV, just the item, just the time you need."}
+      },
+      {
+        "@type": "Question",
+        "name": "Can you transport items to a recycling centre or Entsorgungsstelle?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Yes. If you have bulky items, old furniture, or household waste to drop off at a Recyclinghof or Entsorgungsstelle in Zurich or Aargau, I can help load and transport them. A practical solution if you don't have a car or the items are too big for public transport."}
+      },
+      {
+        "@type": "Question",
         "name": "Can you move a sofa or a bed?",
         "acceptedAnswer": {"@type": "Answer", "text": "Yes. The SUV cargo space is 190 cm long, 110 cm wide, and 80 cm high. Fits most sofas, beds, wardrobes, and large boxes. Many mattresses can be folded in half to save space. Disassembling bed frames beforehand (legs off, slats bundled) helps everything fit more efficiently."}
       },
@@ -135,8 +145,18 @@
       },
       {
         "@type": "Question",
-        "name": "Can you move between cantons, for example from Zurich to another region?",
-        "acceptedAnswer": {"@type": "Answer", "text": "Possibly — it depends on distance, timing, and availability. Get in touch and we can discuss what works."}
+        "name": "Is there a surcharge for locations outside the main service area?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Yes — if your pickup or drop-off is outside the standard 40 km coverage area, a one-time surcharge of 50 CHF applies to cover the extra travel. This will always be communicated clearly before the booking is confirmed."}
+      },
+      {
+        "@type": "Question",
+        "name": "Is there a weekend surcharge?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Yes, weekend moves carry a one-time surcharge of 50 CHF. This applies to Saturday and Sunday bookings."}
+      },
+      {
+        "@type": "Question",
+        "name": "How is the hourly rate calculated?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Time is rounded up to the next full hour. For example, if the job takes 1 hour and 12 minutes, it is billed as 2 hours at 100 CHF each. The clock starts when I arrive and stops when the job is done."}
       },
       {
         "@type": "Question",
@@ -145,8 +165,8 @@
       },
       {
         "@type": "Question",
-        "name": "When are you available?",
-        "acceptedAnswer": {"@type": "Answer", "text": "Weekdays from 17:00, and occasionally on certain weekends. Contact me to check availability for your date."}
+        "name": "Can you move between cantons, for example from Zurich to another region?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Possibly — it depends on distance, timing, and availability. Get in touch and we can discuss what works."}
       },
       {
         "@type": "Question",
@@ -249,6 +269,90 @@
       font-style: italic;
     }
 
+    /* Accordion (details/summary) */
+    .accordion {
+      margin-top: 40px;
+      border-top: 2px solid #eee;
+      padding-top: 20px;
+    }
+    details {
+      border: 1px solid #dde4ef;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+    details[open] {
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    summary {
+      background: #f0f7ff;
+      color: #003366;
+      font-weight: bold;
+      font-size: 1.05rem;
+      padding: 16px 20px;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after {
+      content: '＋';
+      font-size: 1.2rem;
+      color: #003366;
+      transition: transform 0.2s;
+      flex-shrink: 0;
+    }
+    details[open] summary::after { content: '－'; }
+    .accordion-body {
+      padding: 20px;
+      background: white;
+    }
+    .accordion-body h3 {
+      color: #003366;
+      font-size: 1rem;
+      margin: 18px 0 6px;
+    }
+    .accordion-body h3:first-child { margin-top: 0; }
+    .accordion-body p { margin: 0 0 10px; }
+    .accordion-body ul {
+      margin: 6px 0 12px 20px;
+      padding: 0;
+    }
+    .accordion-body ul li { margin-bottom: 6px; }
+
+    /* Tip box inside accordion */
+    .tip-box {
+      background: #fff8e1;
+      border-left: 3px solid #f0a500;
+      padding: 10px 14px;
+      border-radius: 4px;
+      margin: 10px 0;
+      font-size: 0.95rem;
+    }
+
+    /* Surcharge table */
+    .surcharge-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0;
+      font-size: 0.95rem;
+    }
+    .surcharge-table th {
+      background: #003366;
+      color: white;
+      padding: 10px 14px;
+      text-align: left;
+    }
+    .surcharge-table td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #eee;
+    }
+    .surcharge-table tr:last-child td { border-bottom: none; }
+    .surcharge-table tr:nth-child(even) td { background: #f8fafd; }
+
     /* FAQ */
     .faq-section { margin-top: 40px; border-top: 2px solid #eee; padding-top: 20px; }
     .faq-item { margin-bottom: 28px; }
@@ -264,7 +368,6 @@
     }
     .contact-section p { margin: 8px 0; }
     .contact-section a { color: #003366; }
-
     .contact-btn {
       display: inline-flex;
       align-items: center;
@@ -331,6 +434,9 @@
       .container { margin: 12px; padding: 20px 16px; }
       .lang-switcher a, .lang-switcher span { padding: 5px 8px; font-size: 0.8rem; }
       .images img { max-width: 100%; }
+      summary { font-size: 0.97rem; padding: 14px 16px; }
+      .accordion-body { padding: 16px; }
+      .surcharge-table th, .surcharge-table td { padding: 8px 10px; font-size: 0.88rem; }
     }
   </style>
 </head>
@@ -357,12 +463,12 @@
       No fuss about stairs, elevators, or parking &mdash; I won&rsquo;t charge extra for any of that. I just show up, help out, get the job done &mdash; and you&rsquo;ll be in great company.
     </div>
 
-    <p>Help Me Move is a personal moving service based in Zurich, offering affordable moving help across Kanton Z&uuml;rich and Aargau. Whether you need a moving company for a full apartment relocation, furniture transport, bed moving, sofa transport, personal transport, or just a few boxes &mdash; this is a flexible, English-speaking alternative to big moving companies in Zurich. Need a safe ride to the vet for your pet? That&rsquo;s covered too. No surprises, ever.</p>
+    <p>Help Me Move is a personal moving service and <strong>furniture taxi</strong> based in Zurich, covering Kanton Z&uuml;rich and Aargau. Whether you need a moving company for a full apartment relocation, furniture transport, bed moving, sofa transport, a single item delivered across the city, or a run to the <strong>recycling centre (Recyclinghof / Entsorgungsstelle)</strong> &mdash; this SUV gets it done. Need personal transport or a calm ride to the vet for your pet? Also covered. No surprises, ever.</p>
 
     <p><strong>Vehicle cargo dimensions:</strong> 190 cm (L) &times; 110 cm (W) &times; 80 cm (H)</p>
 
     <div class="images">
-      <img src="SUV_ext.webp" alt="Spacious SUV used for moving in Zurich - exterior view" />
+      <img src="SUV_ext.webp" alt="Spacious SUV used as furniture taxi and moving help in Zurich" />
       <img src="SUV_int.webp" alt="Interior cargo space of the SUV showing capacity for furniture and boxes" />
     </div>
 
@@ -377,6 +483,87 @@
     <h2>Availability</h2>
     <p>I am available <strong>weekdays from 17:00</strong> and occasionally on certain weekends. Get in touch to check availability for your date.</p>
 
+    <!-- ACCORDIONS -->
+    <div class="accordion">
+
+      <!-- Accordion 1: Pricing Details -->
+      <details>
+        <summary>&#128176; Pricing Details &amp; Surcharges</summary>
+        <div class="accordion-body">
+
+          <h3>Standard Rate</h3>
+          <p>The base rate is <strong>100 CHF per hour</strong>, all-inclusive. Fuel, parking, and stairs are always included. No minimum booking time.</p>
+
+          <h3>How Time Is Calculated</h3>
+          <p>Time is rounded up to the next full hour. For example, if the job takes 1 hour and 12 minutes, it is billed as <strong>2 hours (200 CHF)</strong>. The clock starts when I arrive at the pickup location and stops when everything is delivered and done.</p>
+
+          <h3>Surcharges</h3>
+          <table class="surcharge-table">
+            <tr>
+              <th>Situation</th>
+              <th>Surcharge</th>
+            </tr>
+            <tr>
+              <td>Outside the standard 40 km coverage area</td>
+              <td><strong>+50 CHF</strong> one-time</td>
+            </tr>
+            <tr>
+              <td>Weekend booking (Saturday or Sunday)</td>
+              <td><strong>+50 CHF</strong> one-time</td>
+            </tr>
+          </table>
+          <p>Surcharges are always communicated upfront before the booking is confirmed &mdash; no surprises.</p>
+
+          <h3>What Is Always Included</h3>
+          <ul>
+            <li>Fuel and travel to your location</li>
+            <li>Parking fees</li>
+            <li>Stairs and elevators &mdash; no floor surcharges</li>
+            <li>Loading and unloading assistance</li>
+            <li>Pets travelling along &mdash; no extra cost</li>
+          </ul>
+
+        </div>
+      </details>
+
+      <!-- Accordion 2: Packing Tips -->
+      <details>
+        <summary>&#128230; How to Prepare for Your Move</summary>
+        <div class="accordion-body">
+
+          <p>A little preparation before the move saves you significant time &mdash; and since time is money here, these tips can directly reduce your bill. Here&rsquo;s what actually makes a difference:</p>
+
+          <h3>&#128295; Disassemble Furniture Where Possible</h3>
+          <p>This is the single most impactful thing you can do. Consider a wardrobe or cabinet that is 180 cm long &times; 100 cm wide &times; 50 cm deep. Loaded whole, it fills roughly 80% of the available cargo space &mdash; leaving almost no room for anything else and likely requiring a second trip. Disassemble it into its main panels (top, sides, shelves) and the same wardrobe uses around 20% of the space, flat against the wall of the cargo area. Everything else fits around it. One trip instead of two &mdash; and you save an hour.</p>
+          <p>The same logic applies to bed frames: remove the legs, bundle the slats, and the frame becomes flat and easy to slide in. A few minutes with an allen key saves real money.</p>
+
+          <div class="tip-box">
+            &#128161; <strong>Tip:</strong> Keep a small bag with all screws, bolts and allen keys from disassembled furniture. Label it with a piece of tape. Reassembly becomes much faster.
+          </div>
+
+          <h3>&#128230; Pack Boxes Smart</h3>
+          <p>Heavy items (books, kitchen appliances) go in <strong>small boxes</strong> &mdash; they stay manageable to lift. Light bulky items (pillows, linens, clothing) go in larger boxes or bags. Overfilled boxes collapse and slow everything down.</p>
+          <p>Fill boxes fully &mdash; partially filled boxes crush when stacked. If a box feels too light, add clothing or towels to fill the space.</p>
+
+          <h3>&#127981; Recycling Centre Runs &mdash; What to Prepare</h3>
+          <p>If you&rsquo;re booking a trip to the Recyclinghof or Entsorgungsstelle, separate your items beforehand by material type (metal, wood, electronics, general waste). Most recycling centres in Zurich require sorted drop-offs, and pre-sorting means we spend less time there &mdash; which saves you money.</p>
+
+          <h3>&#128241; Electronics and Cables</h3>
+          <p>Before unplugging your TV, monitor setup, or home office, take a quick photo of the cable connections at the back. When you rebuild at the new place, the photo does the thinking for you.</p>
+          <p>Coil cables and secure them with a rubber band or cable tie. Loose cables tangle and take time to sort out.</p>
+
+          <h3>&#128274; Wrap Fragile Items With What You Already Have</h3>
+          <p>You don&rsquo;t need to buy bubble wrap. Wrap glasses and fragile items in clothing, towels, or scarves. They protect just as well, and you&rsquo;re packing two things at once.</p>
+
+          <h3>&#128101; If You Have Pets</h3>
+          <p>Pets are welcome to travel in the vehicle during the move. However, if your cat or dog tends to get anxious around loading activity, it helps to keep them in a quiet room while boxes are being moved, then bring them to the vehicle last. They settle much faster when the chaos is already over.</p>
+
+        </div>
+      </details>
+
+    </div>
+    <!-- END ACCORDIONS -->
+
     <!-- FAQ -->
     <div class="faq-section">
       <h2>Frequently Asked Questions</h2>
@@ -387,13 +574,23 @@
       </div>
 
       <div class="faq-item">
+        <h3>Do you offer furniture taxi service in Zurich?</h3>
+        <p>Yes &mdash; furniture taxi (M&ouml;beltaxi) is exactly what this service is. Need a single sofa picked up from Ricardo, a wardrobe moved across the city, or an IKEA delivery brought home? No need to hire a full moving company. Just the SUV, just the item, just the time you need.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can you transport items to a recycling centre?</h3>
+        <p>Yes. If you have old furniture, bulky household items, or waste to drop off at a <strong>Recyclinghof or Entsorgungsstelle</strong> in Zurich or Aargau, I can help load and transport them. A practical solution if you don&rsquo;t have a car or the items are too large for public transport.</p>
+      </div>
+
+      <div class="faq-item">
         <h3>What areas does your moving service cover?</h3>
-        <p>I cover <strong>Zurich city, the greater Zurich area (Kanton Z&uuml;rich), and Aargau including Aarau</strong> &mdash; roughly a 40 km radius from central Zurich. This includes Winterthur, Baden, Dietikon, Schlieren, Opfikon, Regensdorf, Adliswil, Thalwil, and W&auml;denswil. You can <a href="https://www.google.com/maps/place/Help+Me+Move+-+Personal+Moving+%26+Furniture+Transport/@47.3241595,8.5221226,10.19z/data=!4m6!3m5!1s0x4a479a26fe7039bf:0x1b8fb792780fcba2!8m2!3d47.321276!4d8.5285466!16s%2Fg%2F11ytts7mn9?hl=en" target="_blank" rel="noopener" style="color:#003366; font-weight:bold;">see the service area on Google Maps</a>. Moves to other cantons may be possible depending on the situation &mdash; feel free to ask.</p>
+        <p>I cover <strong>Zurich city, the greater Zurich area (Kanton Z&uuml;rich), and Aargau including Aarau</strong> &mdash; roughly a 40 km radius from central Zurich. This includes Winterthur, Baden, Dietikon, Schlieren, Opfikon, Regensdorf, Adliswil, Thalwil, and W&auml;denswil. You can <a href="https://www.google.com/maps/place/Help+Me+Move+-+Personal+Moving+%26+Furniture+Transport/@47.3241595,8.5221226,10.19z/data=!4m6!3m5!1s0x4a479a26fe7039bf:0x1b8fb792780fcba2!8m2!3d47.321276!4d8.5285466!16s%2Fg%2F11ytts7mn9?hl=en" target="_blank" rel="noopener" style="color:#003366; font-weight:bold;">see the service area on Google Maps</a>. Moves to other cantons may be possible &mdash; feel free to ask.</p>
       </div>
 
       <div class="faq-item">
         <h3>Can you move a sofa or a bed?</h3>
-        <p>Yes! The SUV cargo space is 190 cm long, 110 cm wide, and 80 cm high &mdash; fits most sofas, single and double beds, wardrobes, and large boxes. <strong>Tip:</strong> Many modern mattresses can be folded in half, which saves a lot of space. For bed frames, disassembling them beforehand (legs off, slats bundled) means everything fits more efficiently and fewer trips are needed.</p>
+        <p>Yes! The SUV cargo space is 190 cm long, 110 cm wide, and 80 cm high &mdash; fits most sofas, single and double beds, wardrobes, and large boxes. Many modern mattresses can be folded in half to save space. Disassembling bed frames beforehand means everything fits more efficiently and fewer trips are needed.</p>
       </div>
 
       <div class="faq-item">
@@ -413,7 +610,7 @@
 
       <div class="faq-item">
         <h3>Do you help with IKEA pickups, Ricardo, or Facebook Marketplace collections?</h3>
-        <p>Yes! I regularly help with IKEA pickups, as well as collecting items bought on Ricardo, Facebook Marketplace, or other second-hand platforms &mdash; and getting them safely to your place across Zurich and Aargau.</p>
+        <p>Yes! I regularly help with IKEA pickups, as well as collecting items bought on Ricardo, Facebook Marketplace, or other second-hand platforms &mdash; and getting them safely to your place.</p>
       </div>
 
       <div class="faq-item">
