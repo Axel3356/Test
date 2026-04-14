@@ -105,13 +105,8 @@
       },
       {
         "@type": "Question",
-        "name": "What areas does your moving service cover?",
-        "acceptedAnswer": {"@type": "Answer", "text": "Zurich city, the greater Zurich area (Kanton Zurich), and Aargau including Aarau — roughly a 40 km radius. This includes Winterthur, Baden, Dietikon, Schlieren, Opfikon, Regensdorf, Adliswil, Thalwil, and Wadenswil. Moves to other cantons may be possible depending on the situation."}
-      },
-      {
-        "@type": "Question",
         "name": "Do you offer furniture taxi service in Zurich?",
-        "acceptedAnswer": {"@type": "Answer", "text": "Yes — furniture taxi is exactly what this service is. Need a single item picked up or delivered across Zurich or Aargau? No need to hire a full moving company. Just the SUV, just the item, just the time you need."}
+        "acceptedAnswer": {"@type": "Answer", "text": "Yes — furniture taxi is exactly what this service is. Need a single sofa picked up from Ricardo, a wardrobe moved across the city, or an IKEA delivery brought home? No need to hire a full moving company. Just the SUV, just the item, just the time you need."}
       },
       {
         "@type": "Question",
@@ -120,8 +115,13 @@
       },
       {
         "@type": "Question",
+        "name": "What areas does your moving service cover?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Zurich city, the greater Zurich area (Kanton Zurich), and Aargau including Aarau — roughly a 40 km radius. This includes Winterthur, Baden, Dietikon, Schlieren, Opfikon, Regensdorf, Adliswil, Thalwil, and Wadenswil. Moves to other cantons may be possible depending on the situation."}
+      },
+      {
+        "@type": "Question",
         "name": "Can you move a sofa or a bed?",
-        "acceptedAnswer": {"@type": "Answer", "text": "Yes. The SUV cargo space is 190 cm long, 110 cm wide, and 80 cm high. Fits most sofas, beds, wardrobes, and large boxes. Many mattresses can be folded in half to save space. Disassembling bed frames beforehand (legs off, slats bundled) helps everything fit more efficiently."}
+        "acceptedAnswer": {"@type": "Answer", "text": "Yes. The SUV cargo space is 190 cm long, 110 cm wide, and 80 cm high. Fits most sofas, beds, wardrobes, and large boxes. Many mattresses can be folded in half to save space. Disassembling bed frames beforehand helps everything fit more efficiently."}
       },
       {
         "@type": "Question",
@@ -135,18 +135,8 @@
       },
       {
         "@type": "Question",
-        "name": "Do you help with IKEA pickups, Ricardo, or Facebook Marketplace collections?",
-        "acceptedAnswer": {"@type": "Answer", "text": "Yes. I regularly help with IKEA pickups as well as collecting items bought on Ricardo, Facebook Marketplace, or other second-hand platforms across Zurich and Aargau."}
-      },
-      {
-        "@type": "Question",
-        "name": "Do you help with loading and unloading?",
-        "acceptedAnswer": {"@type": "Answer", "text": "Yes, I assist with loading and unloading. For heavier items, having an extra pair of hands on your side is always a good idea. No extra charge for stairs or elevators."}
-      },
-      {
-        "@type": "Question",
         "name": "Is there a surcharge for locations outside the main service area?",
-        "acceptedAnswer": {"@type": "Answer", "text": "Yes — if your pickup or drop-off is outside the standard 40 km coverage area, a one-time surcharge of 50 CHF applies to cover the extra travel. This will always be communicated clearly before the booking is confirmed."}
+        "acceptedAnswer": {"@type": "Answer", "text": "Yes — if your pickup or drop-off is outside the standard 40 km coverage area, a one-time surcharge of 50 CHF applies. This is always communicated before the booking is confirmed."}
       },
       {
         "@type": "Question",
@@ -160,13 +150,13 @@
       },
       {
         "@type": "Question",
-        "name": "Do you speak English?",
-        "acceptedAnswer": {"@type": "Answer", "text": "Yes, fully fluent in English. As an expat myself, I understand the challenges of settling in Switzerland and offer a relaxed, English-speaking service."}
+        "name": "Do you help with IKEA pickups, Ricardo, or Facebook Marketplace collections?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Yes. I regularly help with IKEA pickups as well as collecting items bought on Ricardo, Facebook Marketplace, or other second-hand platforms across Zurich and Aargau."}
       },
       {
         "@type": "Question",
-        "name": "Can you move between cantons, for example from Zurich to another region?",
-        "acceptedAnswer": {"@type": "Answer", "text": "Possibly — it depends on distance, timing, and availability. Get in touch and we can discuss what works."}
+        "name": "Do you speak English?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Yes, fully fluent in English. As an expat myself, I understand the challenges of settling in Switzerland and offer a relaxed, English-speaking service."}
       },
       {
         "@type": "Question",
@@ -191,7 +181,6 @@
     *, *::before, *::after { box-sizing: border-box; }
     body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; line-height: 1.7; color: #333; }
 
-    /* Header */
     header {
       background: url('zrh.jpg') no-repeat center center;
       background-size: cover;
@@ -204,43 +193,24 @@
     header h1 { font-size: 2rem; margin: 0 0 10px; }
     header p  { font-size: 1.15rem; margin: 0; }
 
-    /* Language switcher */
     .lang-switcher { position: absolute; top: 20px; right: 20px; }
-    .lang-switcher a,
-    .lang-switcher span {
-      background: #003366;
-      color: white;
-      padding: 6px 10px;
-      border-radius: 5px;
-      margin-left: 6px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 0.9rem;
-      display: inline-block;
-      transition: background 0.2s;
+    .lang-switcher a, .lang-switcher span {
+      background: #003366; color: white; padding: 6px 10px;
+      border-radius: 5px; margin-left: 6px; text-decoration: none;
+      font-weight: bold; font-size: 0.9rem; display: inline-block; transition: background 0.2s;
     }
     .lang-switcher a:hover { background: #0055a5; }
-    .lang-switcher .active {
-      background: #ffffff;
-      color: #003366;
-      box-shadow: 0 0 5px #003366;
-      cursor: default;
-    }
+    .lang-switcher .active { background: #ffffff; color: #003366; box-shadow: 0 0 5px #003366; cursor: default; }
 
-    /* Main container */
     .container {
-      max-width: 900px;
-      margin: 30px auto;
-      padding: 30px;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      max-width: 900px; margin: 30px auto; padding: 30px;
+      background: white; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     }
 
     h2 { color: #003366; border-bottom: 2px solid #eee; padding-bottom: 8px; margin-top: 40px; }
     h2:first-child { margin-top: 0; }
+    h3 { color: #003366; font-size: 1.05rem; margin: 24px 0 6px; }
 
-    /* Images */
     .images { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; margin: 20px 0; }
     .images img {
       flex: 1 1 300px; max-width: 45%; height: auto;
@@ -248,110 +218,44 @@
       border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.12);
     }
 
-    /* Price box */
     .price-box {
-      background: #f0f7ff;
-      border-left: 4px solid #003366;
-      padding: 16px 20px;
-      border-radius: 4px;
-      margin: 20px 0;
-      font-size: 1.1rem;
+      background: #f0f7ff; border-left: 4px solid #003366;
+      padding: 16px 20px; border-radius: 4px; margin: 20px 0; font-size: 1.1rem;
     }
 
-    /* Highlight box */
     .highlight-box {
-      background: #fff8e1;
-      border-left: 4px solid #f0a500;
-      padding: 14px 20px;
-      border-radius: 4px;
-      margin: 20px 0;
-      font-size: 1rem;
-      font-style: italic;
+      background: #fff8e1; border-left: 4px solid #f0a500;
+      padding: 14px 20px; border-radius: 4px; margin: 20px 0;
+      font-size: 1rem; font-style: italic;
     }
 
-    /* Accordion (details/summary) */
-    .accordion {
-      margin-top: 40px;
-      border-top: 2px solid #eee;
-      padding-top: 20px;
-    }
-    details {
-      border: 1px solid #dde4ef;
-      border-radius: 8px;
-      margin-bottom: 12px;
-      overflow: hidden;
-    }
-    details[open] {
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    }
-    summary {
-      background: #f0f7ff;
-      color: #003366;
-      font-weight: bold;
-      font-size: 1.05rem;
-      padding: 16px 20px;
-      cursor: pointer;
-      list-style: none;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      user-select: none;
-    }
-    summary::-webkit-details-marker { display: none; }
-    summary::after {
-      content: '＋';
-      font-size: 1.2rem;
-      color: #003366;
-      transition: transform 0.2s;
-      flex-shrink: 0;
-    }
-    details[open] summary::after { content: '－'; }
-    .accordion-body {
-      padding: 20px;
-      background: white;
-    }
-    .accordion-body h3 {
-      color: #003366;
-      font-size: 1rem;
-      margin: 18px 0 6px;
-    }
-    .accordion-body h3:first-child { margin-top: 0; }
-    .accordion-body p { margin: 0 0 10px; }
-    .accordion-body ul {
-      margin: 6px 0 12px 20px;
-      padding: 0;
-    }
-    .accordion-body ul li { margin-bottom: 6px; }
-
-    /* Tip box inside accordion */
     .tip-box {
-      background: #fff8e1;
-      border-left: 3px solid #f0a500;
-      padding: 10px 14px;
-      border-radius: 4px;
-      margin: 10px 0;
-      font-size: 0.95rem;
+      background: #fff8e1; border-left: 3px solid #f0a500;
+      padding: 10px 14px; border-radius: 4px; margin: 12px 0; font-size: 0.95rem;
     }
 
     /* Surcharge table */
-    .surcharge-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 12px 0;
-      font-size: 0.95rem;
-    }
-    .surcharge-table th {
-      background: #003366;
-      color: white;
-      padding: 10px 14px;
-      text-align: left;
-    }
-    .surcharge-table td {
-      padding: 10px 14px;
-      border-bottom: 1px solid #eee;
-    }
+    .surcharge-table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.95rem; }
+    .surcharge-table th { background: #003366; color: white; padding: 10px 14px; text-align: left; }
+    .surcharge-table td { padding: 10px 14px; border-bottom: 1px solid #eee; }
     .surcharge-table tr:last-child td { border-bottom: none; }
     .surcharge-table tr:nth-child(even) td { background: #f8fafd; }
+
+    /* Inline WhatsApp CTA */
+    .inline-cta {
+      display: flex; align-items: center; gap: 12px;
+      background: #f0fff4; border: 1px solid #c3e6cb;
+      border-radius: 8px; padding: 14px 18px; margin: 28px 0;
+      flex-wrap: wrap;
+    }
+    .inline-cta p { margin: 0; font-size: 0.95rem; color: #333; flex: 1; }
+    .inline-cta a {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: #25D366; color: white; padding: 9px 18px;
+      border-radius: 6px; text-decoration: none; font-weight: bold;
+      font-size: 0.9rem; white-space: nowrap; transition: background 0.2s;
+    }
+    .inline-cta a:hover { background: #1ebe57; }
 
     /* FAQ */
     .faq-section { margin-top: 40px; border-top: 2px solid #eee; padding-top: 20px; }
@@ -359,90 +263,62 @@
     .faq-item h3 { color: #003366; margin-bottom: 6px; font-size: 1.1rem; }
     .faq-item p { margin: 0; }
 
-    /* Contact - centered */
+    /* Contact */
     .contact-section {
-      margin-top: 40px;
-      border-top: 2px solid #eee;
-      padding-top: 20px;
-      text-align: center;
+      margin-top: 40px; border-top: 2px solid #eee;
+      padding-top: 20px; text-align: center;
     }
     .contact-section p { margin: 8px 0; }
     .contact-section a { color: #003366; }
     .contact-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      background: #25D366;
-      color: white;
-      padding: 14px 28px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1rem;
-      margin-top: 12px;
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      background: #25D366; color: white; padding: 14px 28px; border-radius: 6px;
+      text-decoration: none; font-weight: bold; font-size: 1rem; margin-top: 12px;
       transition: background 0.2s, transform 0.2s;
     }
     .contact-btn:hover { background: #1ebe57; transform: scale(1.02); }
 
-    /* Reviews row */
     .reviews-row {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-      flex-wrap: wrap;
-      margin-top: 24px;
-      padding: 14px 20px;
-      background: #f0f7ff;
-      border-radius: 8px;
-      text-align: center;
+      display: flex; justify-content: center; align-items: center;
+      gap: 20px; flex-wrap: wrap; margin-top: 24px; padding: 14px 20px;
+      background: #f0f7ff; border-radius: 8px; text-align: center;
     }
     .reviews-row a { color: #003366; font-weight: bold; text-decoration: underline; font-size: 0.95rem; }
     .reviews-row a:hover { color: #0055a5; }
 
-    /* Share */
     .share-section { text-align: center; padding: 40px 20px; background: #f9f9f9; }
     .share-section h2 { color: #003366; border: none; }
     .share-buttons { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 16px; }
     .share-btn {
-      display: inline-flex; align-items: center; gap: 8px;
-      color: white; padding: 10px 18px; border-radius: 6px;
-      text-decoration: none; font-weight: 600; font-size: 0.95rem;
+      display: inline-flex; align-items: center; gap: 8px; color: white;
+      padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.95rem;
     }
     .share-btn.facebook { background: #1877F2; }
     .share-btn.whatsapp { background: #25D366; }
     .share-btn:hover { opacity: 0.88; }
 
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 24px 20px;
-      background: #eee;
-      color: #555;
-      font-size: 0.9rem;
-    }
+    footer { text-align: center; padding: 24px 20px; background: #eee; color: #555; font-size: 0.9rem; }
     footer a { color: #003366; text-decoration: none; }
     footer a:hover { text-decoration: underline; }
 
     .whatsapp-svg { width: 20px; height: 20px; fill: white; flex-shrink: 0; }
 
-    /* Mobile */
+    ul.checklist { margin: 8px 0 16px 20px; padding: 0; }
+    ul.checklist li { margin-bottom: 6px; }
+
     @media (max-width: 600px) {
       header { padding: 60px 20px 50px; }
       header h1 { font-size: 1.4rem; }
       .container { margin: 12px; padding: 20px 16px; }
       .lang-switcher a, .lang-switcher span { padding: 5px 8px; font-size: 0.8rem; }
       .images img { max-width: 100%; }
-      summary { font-size: 0.97rem; padding: 14px 16px; }
-      .accordion-body { padding: 16px; }
       .surcharge-table th, .surcharge-table td { padding: 8px 10px; font-size: 0.88rem; }
+      .inline-cta { flex-direction: column; align-items: flex-start; }
     }
   </style>
 </head>
 <body>
 
-  <!-- Header -->
   <header>
     <div class="lang-switcher">
       <span class="active">&#127468;&#127463; English</span>
@@ -452,7 +328,6 @@
     <p>Personal &middot; Reliable &middot; Pet-Friendly &middot; English-Speaking</p>
   </header>
 
-  <!-- Main Content -->
   <div class="container">
 
     <h2>Personal Moving Help in Zurich &amp; Aargau</h2>
@@ -479,90 +354,72 @@
     </div>
     <p>You only pay for the time used. Most moves take up to 3 hours. Contact me for a quick estimate based on your situation.</p>
 
+    <h3>How Time Is Calculated</h3>
+    <p>Time is rounded up to the next full hour. If the job takes 1 hour and 12 minutes, it is billed as <strong>2 hours (200 CHF)</strong>. The clock starts when I arrive at the pickup location and stops when everything is delivered and done.</p>
+
+    <h3>Surcharges</h3>
+    <table class="surcharge-table">
+      <tr><th>Situation</th><th>Surcharge</th></tr>
+      <tr><td>Outside the standard 40 km coverage area</td><td><strong>+50 CHF</strong> one-time</td></tr>
+      <tr><td>Weekend booking (Saturday or Sunday)</td><td><strong>+50 CHF</strong> one-time</td></tr>
+    </table>
+    <p>Surcharges are always communicated upfront before the booking is confirmed &mdash; no surprises.</p>
+
+    <h3>What Is Always Included</h3>
+    <ul class="checklist">
+      <li>Fuel and travel to your location</li>
+      <li>Parking fees</li>
+      <li>Stairs and elevators &mdash; no floor surcharges</li>
+      <li>Loading and unloading assistance</li>
+      <li>Pets travelling along &mdash; no extra cost</li>
+    </ul>
+
+    <div class="inline-cta">
+      <p>Got a quick question about pricing for your move?</p>
+      <a href="https://wa.me/41782421211" target="_blank" rel="noopener">
+        <svg style="width:18px;height:18px;fill:white;flex-shrink:0;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.52 3.48A11.805 11.805 0 0012 0C5.373 0 0 5.373 0 12a11.98 11.98 0 001.639 6.012L0 24l6.11-1.589A11.976 11.976 0 0012 24c6.627 0 12-5.373 12-12a11.805 11.805 0 00-3.48-8.52zM12 21.529a9.514 9.514 0 01-4.879-1.404l-.349-.21-3.628.943.968-3.544-.227-.36A9.536 9.536 0 012.474 12c0-5.227 4.243-9.47 9.47-9.47 2.532 0 4.914.987 6.703 2.776a9.452 9.452 0 012.796 6.694c0 5.227-4.243 9.47-9.469 9.47zm5.204-7.148c-.286-.144-1.69-.83-1.95-.924-.26-.094-.45-.144-.64.144s-.734.924-.9 1.112c-.166.187-.33.21-.616.07-.286-.144-1.2-.442-2.28-1.4-.842-.75-1.41-1.67-1.574-1.956-.166-.286-.018-.44.126-.584.13-.13.286-.33.43-.495.144-.165.19-.286.286-.476.095-.19.05-.357-.025-.5-.074-.144-.64-1.54-.876-2.11-.23-.553-.466-.48-.64-.49l-.55-.01c-.19 0-.5.07-.76.357s-1 .974-1 2.37c0 1.397 1.028 2.75 1.173 2.945.144.19 2.028 3.1 4.91 4.342.686.296 1.22.472 1.637.604.686.22 1.31.19 1.8.115.55-.084 1.69-.69 1.928-1.36.238-.67.238-1.247.166-1.37-.07-.118-.26-.19-.545-.333z"/></svg>
+        WhatsApp me
+      </a>
+    </div>
+
     <!-- Availability -->
     <h2>Availability</h2>
     <p>I am available <strong>weekdays from 17:00</strong> and occasionally on certain weekends. Get in touch to check availability for your date.</p>
 
-    <!-- ACCORDIONS -->
-    <div class="accordion">
+    <!-- How to Prepare -->
+    <h2>How to Prepare for Your Move</h2>
+    <p>A little preparation before the move saves you significant time &mdash; and since time is money here, these tips can directly reduce your bill.</p>
 
-      <!-- Accordion 1: Pricing Details -->
-      <details>
-        <summary>&#128176; Pricing Details &amp; Surcharges</summary>
-        <div class="accordion-body">
+    <h3>&#128295; Disassemble Furniture Where Possible</h3>
+    <p>This is the single most impactful thing you can do. Consider a wardrobe or cabinet that is 180 cm long &times; 100 cm wide &times; 50 cm deep. Loaded whole, it fills roughly <strong>80% of the available cargo space</strong> &mdash; leaving almost no room for anything else and likely requiring a second trip. Disassemble it into its main panels and the same wardrobe uses around <strong>20% of the space</strong>, flat against the wall of the cargo area. Everything else fits around it. One trip instead of two &mdash; and you save an hour.</p>
+    <p>The same logic applies to bed frames: remove the legs, bundle the slats, and the frame becomes flat and easy to slide in. A few minutes with an allen key saves real money.</p>
 
-          <h3>Standard Rate</h3>
-          <p>The base rate is <strong>100 CHF per hour</strong>, all-inclusive. Fuel, parking, and stairs are always included. No minimum booking time.</p>
-
-          <h3>How Time Is Calculated</h3>
-          <p>Time is rounded up to the next full hour. For example, if the job takes 1 hour and 12 minutes, it is billed as <strong>2 hours (200 CHF)</strong>. The clock starts when I arrive at the pickup location and stops when everything is delivered and done.</p>
-
-          <h3>Surcharges</h3>
-          <table class="surcharge-table">
-            <tr>
-              <th>Situation</th>
-              <th>Surcharge</th>
-            </tr>
-            <tr>
-              <td>Outside the standard 40 km coverage area</td>
-              <td><strong>+50 CHF</strong> one-time</td>
-            </tr>
-            <tr>
-              <td>Weekend booking (Saturday or Sunday)</td>
-              <td><strong>+50 CHF</strong> one-time</td>
-            </tr>
-          </table>
-          <p>Surcharges are always communicated upfront before the booking is confirmed &mdash; no surprises.</p>
-
-          <h3>What Is Always Included</h3>
-          <ul>
-            <li>Fuel and travel to your location</li>
-            <li>Parking fees</li>
-            <li>Stairs and elevators &mdash; no floor surcharges</li>
-            <li>Loading and unloading assistance</li>
-            <li>Pets travelling along &mdash; no extra cost</li>
-          </ul>
-
-        </div>
-      </details>
-
-      <!-- Accordion 2: Packing Tips -->
-      <details>
-        <summary>&#128230; How to Prepare for Your Move</summary>
-        <div class="accordion-body">
-
-          <p>A little preparation before the move saves you significant time &mdash; and since time is money here, these tips can directly reduce your bill. Here&rsquo;s what actually makes a difference:</p>
-
-          <h3>&#128295; Disassemble Furniture Where Possible</h3>
-          <p>This is the single most impactful thing you can do. Consider a wardrobe or cabinet that is 180 cm long &times; 100 cm wide &times; 50 cm deep. Loaded whole, it fills roughly 80% of the available cargo space &mdash; leaving almost no room for anything else and likely requiring a second trip. Disassemble it into its main panels (top, sides, shelves) and the same wardrobe uses around 20% of the space, flat against the wall of the cargo area. Everything else fits around it. One trip instead of two &mdash; and you save an hour.</p>
-          <p>The same logic applies to bed frames: remove the legs, bundle the slats, and the frame becomes flat and easy to slide in. A few minutes with an allen key saves real money.</p>
-
-          <div class="tip-box">
-            &#128161; <strong>Tip:</strong> Keep a small bag with all screws, bolts and allen keys from disassembled furniture. Label it with a piece of tape. Reassembly becomes much faster.
-          </div>
-
-          <h3>&#128230; Pack Boxes Smart</h3>
-          <p>Heavy items (books, kitchen appliances) go in <strong>small boxes</strong> &mdash; they stay manageable to lift. Light bulky items (pillows, linens, clothing) go in larger boxes or bags. Overfilled boxes collapse and slow everything down.</p>
-          <p>Fill boxes fully &mdash; partially filled boxes crush when stacked. If a box feels too light, add clothing or towels to fill the space.</p>
-
-          <h3>&#127981; Recycling Centre Runs &mdash; What to Prepare</h3>
-          <p>If you&rsquo;re booking a trip to the Recyclinghof or Entsorgungsstelle, separate your items beforehand by material type (metal, wood, electronics, general waste). Most recycling centres in Zurich require sorted drop-offs, and pre-sorting means we spend less time there &mdash; which saves you money.</p>
-
-          <h3>&#128241; Electronics and Cables</h3>
-          <p>Before unplugging your TV, monitor setup, or home office, take a quick photo of the cable connections at the back. When you rebuild at the new place, the photo does the thinking for you.</p>
-          <p>Coil cables and secure them with a rubber band or cable tie. Loose cables tangle and take time to sort out.</p>
-
-          <h3>&#128274; Wrap Fragile Items With What You Already Have</h3>
-          <p>You don&rsquo;t need to buy bubble wrap. Wrap glasses and fragile items in clothing, towels, or scarves. They protect just as well, and you&rsquo;re packing two things at once.</p>
-
-          <h3>&#128101; If You Have Pets</h3>
-          <p>Pets are welcome to travel in the vehicle during the move. However, if your cat or dog tends to get anxious around loading activity, it helps to keep them in a quiet room while boxes are being moved, then bring them to the vehicle last. They settle much faster when the chaos is already over.</p>
-
-        </div>
-      </details>
-
+    <div class="tip-box">
+      &#128161; <strong>Tip:</strong> Keep all screws, bolts and allen keys from disassembled furniture in a small labelled bag. Reassembly becomes much faster at the other end.
     </div>
-    <!-- END ACCORDIONS -->
+
+    <h3>&#128230; Pack Boxes Smart</h3>
+    <p>Heavy items (books, kitchen appliances) go in <strong>small boxes</strong> &mdash; they stay manageable to lift. Light bulky items (pillows, linens, clothing) go in larger boxes or bags. Overfilled boxes collapse and slow everything down. Fill boxes fully &mdash; partially filled boxes crush when stacked. If a box feels too light, add clothing or towels to fill the space.</p>
+
+    <h3>&#127981; Recycling Centre Runs &mdash; Pre-Sort Your Items</h3>
+    <p>If you&rsquo;re booking a trip to the Recyclinghof or Entsorgungsstelle, separate your items beforehand by material type (metal, wood, electronics, general waste). Most recycling centres in Zurich require sorted drop-offs, and pre-sorting means we spend less time there &mdash; which saves you money.</p>
+
+    <h3>&#128241; Electronics and Cables</h3>
+    <p>Before unplugging your TV, monitor setup, or home office, take a quick photo of the cable connections at the back. When you rebuild at the new place, the photo does the thinking for you. Coil cables and secure them with a rubber band or cable tie &mdash; loose cables tangle and take time to sort out.</p>
+
+    <h3>&#128274; Wrap Fragile Items With What You Already Have</h3>
+    <p>You don&rsquo;t need to buy bubble wrap. Wrap glasses and fragile items in clothing, towels, or scarves. They protect just as well, and you&rsquo;re packing two things at once.</p>
+
+    <h3>&#128049; If You Have Pets</h3>
+    <p>Pets are welcome to travel in the vehicle during the move. If your cat or dog tends to get anxious around loading activity, keep them in a quiet room while boxes are being moved, then bring them to the vehicle last. They settle much faster when the chaos is already over.</p>
+
+    <div class="inline-cta">
+      <p>Ready to book or want to discuss your move?</p>
+      <a href="https://wa.me/41782421211" target="_blank" rel="noopener">
+        <svg style="width:18px;height:18px;fill:white;flex-shrink:0;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.52 3.48A11.805 11.805 0 0012 0C5.373 0 0 5.373 0 12a11.98 11.98 0 001.639 6.012L0 24l6.11-1.589A11.976 11.976 0 0012 24c6.627 0 12-5.373 12-12a11.805 11.805 0 00-3.48-8.52zM12 21.529a9.514 9.514 0 01-4.879-1.404l-.349-.21-3.628.943.968-3.544-.227-.36A9.536 9.536 0 012.474 12c0-5.227 4.243-9.47 9.47-9.47 2.532 0 4.914.987 6.703 2.776a9.452 9.452 0 012.796 6.694c0 5.227-4.243 9.47-9.469 9.47zm5.204-7.148c-.286-.144-1.69-.83-1.95-.924-.26-.094-.45-.144-.64.144s-.734.924-.9 1.112c-.166.187-.33.21-.616.07-.286-.144-1.2-.442-2.28-1.4-.842-.75-1.41-1.67-1.574-1.956-.166-.286-.018-.44.126-.584.13-.13.286-.33.43-.495.144-.165.19-.286.286-.476.095-.19.05-.357-.025-.5-.074-.144-.64-1.54-.876-2.11-.23-.553-.466-.48-.64-.49l-.55-.01c-.19 0-.5.07-.76.357s-1 .974-1 2.37c0 1.397 1.028 2.75 1.173 2.945.144.19 2.028 3.1 4.91 4.342.686.296 1.22.472 1.637.604.686.22 1.31.19 1.8.115.55-.084 1.69-.69 1.928-1.36.238-.67.238-1.247.166-1.37-.07-.118-.26-.19-.545-.333z"/></svg>
+        WhatsApp me
+      </a>
+    </div>
 
     <!-- FAQ -->
     <div class="faq-section">
@@ -575,7 +432,7 @@
 
       <div class="faq-item">
         <h3>Do you offer furniture taxi service in Zurich?</h3>
-        <p>Yes &mdash; furniture taxi (M&ouml;beltaxi) is exactly what this service is. Need a single sofa picked up from Ricardo, a wardrobe moved across the city, or an IKEA delivery brought home? No need to hire a full moving company. Just the SUV, just the item, just the time you need.</p>
+        <p>Yes &mdash; furniture taxi is exactly what this service is. Need a single sofa picked up from Ricardo, a wardrobe moved across the city, or an IKEA delivery brought home? No need to hire a full moving company. Just the SUV, just the item, just the time you need.</p>
       </div>
 
       <div class="faq-item">
@@ -585,7 +442,7 @@
 
       <div class="faq-item">
         <h3>What areas does your moving service cover?</h3>
-        <p>I cover <strong>Zurich city, the greater Zurich area (Kanton Z&uuml;rich), and Aargau including Aarau</strong> &mdash; roughly a 40 km radius from central Zurich. This includes Winterthur, Baden, Dietikon, Schlieren, Opfikon, Regensdorf, Adliswil, Thalwil, and W&auml;denswil. You can <a href="https://www.google.com/maps/place/Help+Me+Move+-+Personal+Moving+%26+Furniture+Transport/@47.3241595,8.5221226,10.19z/data=!4m6!3m5!1s0x4a479a26fe7039bf:0x1b8fb792780fcba2!8m2!3d47.321276!4d8.5285466!16s%2Fg%2F11ytts7mn9?hl=en" target="_blank" rel="noopener" style="color:#003366; font-weight:bold;">see the service area on Google Maps</a>. Moves to other cantons may be possible &mdash; feel free to ask.</p>
+        <p>I cover <strong>Zurich city, the greater Zurich area (Kanton Z&uuml;rich), and Aargau including Aarau</strong> &mdash; roughly a 40 km radius. This includes Winterthur, Baden, Dietikon, Schlieren, Opfikon, Regensdorf, Adliswil, Thalwil, and W&auml;denswil. You can <a href="https://www.google.com/maps/place/Help+Me+Move+-+Personal+Moving+%26+Furniture+Transport/@47.3241595,8.5221226,10.19z/data=!4m6!3m5!1s0x4a479a26fe7039bf:0x1b8fb792780fcba2!8m2!3d47.321276!4d8.5285466!16s%2Fg%2F11ytts7mn9?hl=en" target="_blank" rel="noopener" style="color:#003366;font-weight:bold;">see the service area on Google Maps</a>. Moves to other cantons may be possible &mdash; feel free to ask.</p>
       </div>
 
       <div class="faq-item">
@@ -610,7 +467,7 @@
 
       <div class="faq-item">
         <h3>Do you help with IKEA pickups, Ricardo, or Facebook Marketplace collections?</h3>
-        <p>Yes! I regularly help with IKEA pickups, as well as collecting items bought on Ricardo, Facebook Marketplace, or other second-hand platforms &mdash; and getting them safely to your place.</p>
+        <p>Yes! I regularly help with IKEA pickups, as well as collecting items bought on Ricardo, Facebook Marketplace, or other second-hand platforms across Zurich and Aargau.</p>
       </div>
 
       <div class="faq-item">
@@ -657,23 +514,15 @@
 
   </div>
 
-  <!-- Share Section -->
   <div class="share-section">
     <h2>Know someone who needs help moving?</h2>
     <p>Share this page with friends, colleagues, or your expat community.</p>
     <div class="share-buttons">
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.helpmemove.ch"
-         target="_blank" rel="noopener" class="share-btn facebook">
-        &#128216; Share on Facebook
-      </a>
-      <a href="https://wa.me/?text=Need%20moving%20help%20in%20Zurich%3F%20Check%20this%20out%3A%20https%3A%2F%2Fwww.helpmemove.ch"
-         target="_blank" rel="noopener" class="share-btn whatsapp">
-        &#128172; Share on WhatsApp
-      </a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.helpmemove.ch" target="_blank" rel="noopener" class="share-btn facebook">&#128216; Share on Facebook</a>
+      <a href="https://wa.me/?text=Need%20moving%20help%20in%20Zurich%3F%20Check%20this%20out%3A%20https%3A%2F%2Fwww.helpmemove.ch" target="_blank" rel="noopener" class="share-btn whatsapp">&#128172; Share on WhatsApp</a>
     </div>
   </div>
 
-  <!-- Footer -->
   <footer>
     <p>&copy; 2026 Help Me Move Zurich &nbsp;&middot;&nbsp; Serving Zurich, Aargau &amp; surrounding areas &nbsp;&middot;&nbsp; <a href="tel:+41782421211">+41 78 242 12 11</a></p>
   </footer>
